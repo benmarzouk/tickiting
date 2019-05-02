@@ -1,0 +1,62 @@
+/* iCheck plugin Minimal skin, #15c315
+----------------------------------- */
+.icheckbox_minimal-#15c315,
+.iradio_minimal-#15c315 {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    background: url(#15c315.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_minimal-#15c315 {
+    background-position: 0 0;
+}
+    .icheckbox_minimal-#15c315.hover {
+        background-position: -20px 0;
+    }
+    .icheckbox_minimal-#15c315.checked {
+        background-position: -40px 0;
+    }
+    .icheckbox_minimal-#15c315.disabled {
+        background-position: -60px 0;
+        cursor: default;
+    }
+    .icheckbox_minimal-#15c315.checked.disabled {
+        background-position: -80px 0;
+    }
+
+.iradio_minimal-#15c315 {
+    background-position: -100px 0;
+}
+    .iradio_minimal-#15c315.hover {
+        background-position: -120px 0;
+    }
+    .iradio_minimal-#15c315.checked {
+        background-position: -140px 0;
+    }
+    .iradio_minimal-#15c315.disabled {
+        background-position: -160px 0;
+        cursor: default;
+    }
+    .iradio_minimal-#15c315.checked.disabled {
+        background-position: -180px 0;
+    }
+
+/* Retina support */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (-moz-min-device-pixel-ratio: 1.5),
+       only screen and (-o-min-device-pixel-ratio: 1.5),
+       only screen and (min-device-pixel-ratio: 1.5) {
+    .icheckbox_minimal-#15c315,
+    .iradio_minimal-#15c315 {
+        background-image: url(#15c315@2x.png);
+        -webkit-background-size: 200px 20px;
+        background-size: 200px 20px;
+    }
+}

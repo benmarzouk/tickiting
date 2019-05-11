@@ -1,4 +1,4 @@
-<script src="{{asset("lb-faveo/plugins/iCheck/icheck.min.js")}}" type="text/javascript"></script>
+<script src="{{asset("lb-Faveo/plugins/iCheck/icheck.min.js")}}" type="text/javascript"></script>
 <script src="js/jquery.maskedinput.min.js" type="text/javascript"></script>
 <script>
       $(function () {

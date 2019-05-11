@@ -8,7 +8,7 @@
                 font-family: "DejaVu Sans Mono", monospace;
             }
         </style>
-        <link href="{{asset("lb-faveo/css/bootstrap.min.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/css/bootstrap.min.css")}}" rel="stylesheet" type="text/css" />
     </head>
     <body>    
 

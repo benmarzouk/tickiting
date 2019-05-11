@@ -7,7 +7,7 @@ return [
     | API Key
     |--------------------------------------------------------------------------
     |
-    | You can find your API key on your Bugsnag dashboard.
+    | You can find your API key on your BugsnagTableau_De_Bord.
     |
     | This api key points the Bugsnag notifier to the project in your account
     | which should receive your application's uncaught exceptions.

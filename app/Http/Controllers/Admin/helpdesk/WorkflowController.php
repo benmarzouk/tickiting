@@ -28,7 +28,7 @@ use Lang;
 
 /**
  * WorkflowController
- * In this controller in the CRUD function for all the workflow applied in faveo.
+ * In this controller in the CRUD function for all the workflow applied in Faveo.
  *
  * @author      Ladybird <info@ladybirdweb.com>
  */

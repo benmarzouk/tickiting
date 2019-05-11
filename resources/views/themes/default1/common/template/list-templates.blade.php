@@ -63,6 +63,6 @@ $(function() {
     });
 });
 </script>
-<script src="{{asset("lb-faveo/plugins/datatables/jquery.dataTables.js")}}" type="text/javascript"></script>
-<script src="{{asset("lb-faveo/plugins/datatables/dataTables.bootstrap.js")}}" type="text/javascript"></script>
+<script src="{{asset("lb-Faveo/plugins/datatables/jquery.dataTables.js")}}" type="text/javascript"></script>
+<script src="{{asset("lb-Faveo/plugins/datatables/dataTables.bootstrap.js")}}" type="text/javascript"></script>
 @stop

@@ -6,7 +6,7 @@
 @section('add-category')
     class="active"
 @stop
-<script type="text/javascript" src="{{asset('lb-faveo/dist/js/nicEdit.js')}}"></script>
+<script type="text/javascript" src="{{asset('lb-Faveo/dist/js/nicEdit.js')}}"></script>
 
 @section('content')
 {!! Form::open(array('action' => 'Admin\kb\CategoryController@store' , 'method' => 'post') )!!}

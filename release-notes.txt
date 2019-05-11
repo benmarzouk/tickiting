@@ -42,7 +42,7 @@ While integrating slack notifications in Travis for builds and PRs token for SLA
 As we mentioned in the last release that the application is now compatible with PHP7.2 but as has not been tested completely there is the number of issues which occurred while using the application with PHP7.2. This release fixes the issues logged by the application in our issue track manager.
 
 #### Bugs fixed
-- PHP7.2 compatibility issues mentioned in this [GitHub issue](https://github.com/ladybirdweb/faveo-helpdesk/issues/681)
+- PHP7.2 compatibility issues mentioned in this [GitHub issue](https://github.com/ladybirdweb/Faveo-helpdesk/issues/681)
 - Agents are not able to view tickets in ticket pages
 - Delete Forever button does not work
 - Fixed logging method in CommonmailController
@@ -65,7 +65,7 @@ Error Reporting
 --------------------------
 Faveo uses [Bugsnag](https://www.bugsnag.com/) to monitor application stability in the production environment. It helps us to provide bug fixes and feature updates after analyzing the logs and crash reports for the application. **If you are customizing the application under the development environment, we request you to disable this error reporting.** It will allow us to ignore the errors occurred during your development cycle and we can focus more on the exceptions/bugs occurring in the live system of other users of the Faveo community. It can be easily disabled from "Error logs and debugging" option in the admin panel or by updating your app environment to development in `.env`.
 
-You can still report the issues on our [Github Issue page](https://github.com/ladybirdweb/faveo-helpdesk/issues) by providing proper information about the changes you are trying to implement. We assure you that Faveo community will help you and your customization can be a part of Faveo application if it follows our contributing guidelines.
+You can still report the issues on our [Github Issue page](https://github.com/ladybirdweb/Faveo-helpdesk/issues) by providing proper information about the changes you are trying to implement. We assure you that Faveo community will help you and your customization can be a part of Faveo application if it follows our contributing guidelines.
 
 |=====================================================
 | v1.10 Laravel Framework update
@@ -79,8 +79,8 @@ Faveo helpdesk v1.10 introduces some backward non compatible changes due to fram
 * Email sending out department wise
 
 To know more please follow the links below
-https://github.com/ladybirdweb/faveo-helpdesk/releases
-https://github.com/ladybirdweb/faveo-helpdesk/wiki 
+https://github.com/ladybirdweb/Faveo-helpdesk/releases
+https://github.com/ladybirdweb/Faveo-helpdesk/wiki 
 
 |=====================================================
 | v1.9.6 Facebook login bug fix patch
@@ -112,11 +112,11 @@ https://github.com/ladybirdweb/faveo-helpdesk/wiki
 System is storing the attachment in chosen storage medium(DB/file system) but not showing the attachments in ticket detail page or ticket timeline page.
 
 ## How to Fix
-See this link https://github.com/ladybirdweb/faveo-helpdesk/commit/f4d71f3d743123d15558ab120af74499298a1891 for the details of changes made for bug fix.
+See this link https://github.com/ladybirdweb/Faveo-helpdesk/commit/f4d71f3d743123d15558ab120af74499298a1891 for the details of changes made for bug fix.
 
 Or
 
-Open this file: Root_directory of faveo/app/Model/helpdesk/Ticket/Ticket_attachments.php
+Open this file: Root_directory of Faveo/app/Model/helpdesk/Ticket/Ticket_attachments.php
 search and replace
 `if ($this->poster == 'ATTACHMENT')`
 with 
@@ -158,7 +158,7 @@ Enhancements
     |========================================================
 
     Follow this wiki article to upgrade your Faveo system
-    https://github.com/ladybirdweb/faveo-helpdesk/wiki/Upgrade-guide-for-v1.9.2
+    https://github.com/ladybirdweb/Faveo-helpdesk/wiki/Upgrade-guide-for-v1.9.2
 
 |=======================================================
 | v1.9.1
@@ -167,7 +167,7 @@ Enhancements
 Bug Fixes
     
     Admin was not able to save/update cron settings in new installation.
-    Incorrect count of tickets in dashboard while login as an agent .
+    Incorrect count of tickets inTableau_De_Bord while login as an agent .
     In client panel users/clients were able to reply without entering any comment in comment field.
 
 |=======================================================
@@ -196,8 +196,8 @@ Known Bugs
     |=====================================================
     |   update your Faveo version to v1.9.0
     |======================================================
-    Follow our wiki article to update your faveo version to v1.9.0
-    https://github.com/ladybirdweb/faveo-helpdesk/wiki/Upgrade-guide-to-v1.9.0
+    Follow our wiki article to update your Faveo version to v1.9.0
+    https://github.com/ladybirdweb/Faveo-helpdesk/wiki/Upgrade-guide-to-v1.9.0
 
 
 |=======================================================
@@ -224,8 +224,8 @@ Bug Fixes
     |===============================================
     | Update to v1.0.8.0
     |===============================================
-    Follow our wiki article to update your faveo version to v1.0.8.0
-    https://github.com/ladybirdweb/faveo-helpdesk/wiki/How-to-update-v1.0.7.9-to-v1.0.8.0
+    Follow our wiki article to update your Faveo version to v1.0.8.0
+    https://github.com/ladybirdweb/Faveo-helpdesk/wiki/How-to-update-v1.0.7.9-to-v1.0.8.0
 
 
 |=======================================================
@@ -236,7 +236,7 @@ Enhancements
     
     Ticket change status to show in client panel via settings.
     Not to submit two tickets on double click of Ticket submit button.
-    Dashboard linking.
+   Tableau_De_Bord linking.
     Incoming mail format check.
     Added a thread for ticket reopen via email.
     Ticket linking minor issue updated.
@@ -280,7 +280,7 @@ Bug Fixed
     |    Upgrade from v1.0.7.8 to v1.0.7.9 
     |==================================================
 
-    Read upgrade giude here https://github.com/ladybirdweb/faveo-helpdesk/wiki/Manual-Upgrade-from-v1.0.7.8-to-v1.0.7.9
+    Read upgrade giude here https://github.com/ladybirdweb/Faveo-helpdesk/wiki/Manual-Upgrade-from-v1.0.7.8-to-v1.0.7.9
 
 |=======================================================
 | v1.0.7.8
@@ -356,7 +356,7 @@ Bug Fixes
     Pages in knowledge base had some issue
     Complete UI improved and proper error messages are now displayed
     Bug fixed in edit system workflow
-    Dashboard Graph smoothened
+   Tableau_De_Bord Graph smoothened
     Check ticket details without logging
     Install module – check for file permission issue
     Added dummy data for dummy installation
@@ -455,7 +455,7 @@ Bug Fixed
     Mailing issue for ticket reply and new ticket creation fixed
     Email template issue fixed for replying tickets and auto response for ticket creation
     Settings pages error display issue fixed for html type errors
-    Daily notification issue fixed for the new mail system integrated for faveo
+    Daily notification issue fixed for the new mail system integrated for Faveo
     Issue fixed for large size attachments
 
 Enhancements

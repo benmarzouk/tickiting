@@ -24,7 +24,7 @@ class="active"
         font-size: 14px;
     }
     input[type="checkbox"]:not(old) + label span {
-        background: #357ca5a(0, 0, 0, 0) url("lb-faveo/media/images/check_radio_sheet.png") no-repeat scroll left top;
+        background: #357ca5a(0, 0, 0, 0) url("lb-Faveo/media/images/check_radio_sheet.png") no-repeat scroll left top;
         cursor: pointer;
         display: inline-block;
         height: 19px;
@@ -33,7 +33,7 @@ class="active"
         width: 19px;
     }
     input[type="checkbox"]:checked + label span {
-        background: #357ca5a(0, 0, 0, 0) url("lb-faveo/media/images/check_radio_sheet.png") no-repeat scroll -19px top;
+        background: #357ca5a(0, 0, 0, 0) url("lb-Faveo/media/images/check_radio_sheet.png") no-repeat scroll -19px top;
     }
 </style>
 @stop

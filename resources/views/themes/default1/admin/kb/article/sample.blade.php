@@ -1,14 +1,14 @@
 @extends('themes.default1.layouts.master')
 @section('head')
 <!-- DATA TABLES -->
-<link href="{{asset("lb-faveo/plugins/datatables/dataTables.bootstrap.css")}}" rel="stylesheet" type="text/css" />
+<link href="{{asset("lb-Faveo/plugins/datatables/dataTables.bootstrap.css")}}" rel="stylesheet" type="text/css" />
 @stop
 @section('header')
 
 <h1>Home</h1>
 <ol class="breadcrumb">
-    <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-    <li class="active">Dashboard</li>
+    <li><a href="#"><i class="fa fa- Tableau_De_Bord"></i> Home</a></li>
+    <li class="active"> Tableau_De_Bord</li>
 </ol>
 @stop
 
@@ -114,8 +114,8 @@
 </section>
 @stop
 @section('footer')
-<script src="{{asset("lb-faveo/plugins/datatables/jquery.dataTables.js")}}" type="text/javascript"></script>
-<script src="{{asset("lb-faveo/plugins/datatables/dataTables.bootstrap.js")}}" type="text/javascript"></script>
+<script src="{{asset("lb-Faveo/plugins/datatables/jquery.dataTables.js")}}" type="text/javascript"></script>
+<script src="{{asset("lb-Faveo/plugins/datatables/dataTables.bootstrap.js")}}" type="text/javascript"></script>
 <!-- page script -->
 <script type="text/javascript">
 $(function() {

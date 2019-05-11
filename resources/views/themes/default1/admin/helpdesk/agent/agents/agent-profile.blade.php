@@ -37,7 +37,7 @@ class="active"
             <div class="box-body box-profile">
 
                 @if(Auth::user()->profile_pic)
-                <img src="{{asset('lb-faveo/profilepic')}}{{'/'}}{{ $agent->profile_pic }}"class="profile-user-img img-responsive img-circle" alt="User Image"/>
+                <img src="{{asset('lb-Faveo/profilepic')}}{{'/'}}{{ $agent->profile_pic }}"class="profile-user-img img-responsive img-circle" alt="User Image"/>
                 @else
                 <img src="{{ Gravatar::src($agent->email) }}" class="profile-user-img img-responsive img-circle" alt="User Image">
                 @endif

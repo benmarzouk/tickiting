@@ -567,10 +567,10 @@ CREATE TABLE `failed_jobs` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `faveo_mails`
+-- Table structure for table `Faveo_mails`
 --
 
-CREATE TABLE `faveo_mails` (
+CREATE TABLE `Faveo_mails` (
   `id` int(10) UNSIGNED NOT NULL,
   `email_id` int(11) NOT NULL,
   `drive` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
@@ -583,10 +583,10 @@ CREATE TABLE `faveo_mails` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `faveo_queues`
+-- Table structure for table `Faveo_queues`
 --
 
-CREATE TABLE `faveo_queues` (
+CREATE TABLE `Faveo_queues` (
   `id` int(10) UNSIGNED NOT NULL,
   `service_id` int(11) NOT NULL,
   `key` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
@@ -1075,8 +1075,8 @@ INSERT INTO `migrations` (`migration`, `batch`, `id`) VALUES
 ('2016_07_02_051247_create_jobs_table', 1, 87),
 ('2016_07_02_051439_create_failed_jobs_table', 1, 88),
 ('2016_07_19_071910_create_field_values_table', 1, 89),
-('2016_07_26_084458_create_faveo_mails_table', 1, 90),
-('2016_07_26_090201_create_faveo_queues_table', 1, 91),
+('2016_07_26_084458_create_Faveo_mails_table', 1, 90),
+('2016_07_26_090201_create_Faveo_queues_table', 1, 91),
 ('2016_07_26_094753_create_mail_services_table', 1, 92),
 ('2016_07_26_095020_create_queue_services_table', 1, 93),
 ('2016_07_29_113012_create_conditions_table', 1, 94),
@@ -2444,15 +2444,15 @@ ALTER TABLE `failed_jobs`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `faveo_mails`
+-- Indexes for table `Faveo_mails`
 --
-ALTER TABLE `faveo_mails`
+ALTER TABLE `Faveo_mails`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `faveo_queues`
+-- Indexes for table `Faveo_queues`
 --
-ALTER TABLE `faveo_queues`
+ALTER TABLE `Faveo_queues`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -2949,14 +2949,14 @@ ALTER TABLE `emails`
 ALTER TABLE `failed_jobs`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `faveo_mails`
+-- AUTO_INCREMENT for table `Faveo_mails`
 --
-ALTER TABLE `faveo_mails`
+ALTER TABLE `Faveo_mails`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `faveo_queues`
+-- AUTO_INCREMENT for table `Faveo_queues`
 --
-ALTER TABLE `faveo_queues`
+ALTER TABLE `Faveo_queues`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `field_values`

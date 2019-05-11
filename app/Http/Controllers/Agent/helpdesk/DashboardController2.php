@@ -13,12 +13,12 @@ use Exception;
 use View;
 
 /**
- * DashboardController
- * This controlleris used to fetch dashboard in the agent panel.
+ *Tableau_De_BordController
+ * This controlleris used to fetchTableau_De_Bord in the agent panel.
  *
  * @author      Ladybird <info@ladybirdweb.com>
  */
-class DashboardController2 extends Controller
+classTableau_De_BordController2 extends Controller
 {
     /**
      * Create a new controller instance.
@@ -38,7 +38,7 @@ class DashboardController2 extends Controller
     }
 
     /**
-     * Get the dashboard page.
+     * Get theTableau_De_Bord page.
      *
      * @return type view
      */
@@ -48,14 +48,14 @@ class DashboardController2 extends Controller
         // return \Redirect::route('home');
         // }
         try {
-            return View::make('themes.default1.agent.helpdesk.dashboard.dashboard');
+            return View::make('themes.default1.agent.helpdesk. Tableau_De_Bord. Tableau_De_Bord');
         } catch (Exception $e) {
-            return View::make('themes.default1.agent.helpdesk.dashboard.dashboard');
+            return View::make('themes.default1.agent.helpdesk. Tableau_De_Bord. Tableau_De_Bord');
         }
     }
 
     /**
-     * Fetching dashboard graph data to implement graph.
+     * FetchingTableau_De_Bord graph data to implement graph.
      *
      * @return type Json
      */

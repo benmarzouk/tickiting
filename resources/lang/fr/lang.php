@@ -935,10 +935,10 @@ return [
     'User-Created-Successfully'             => 'Utilisateur créé avec succès.',
     /*
       |-----------------------------------------------
-      |  Dashboard
+      | Tableau_De_Bord
       |-----------------------------------------------
      */
-    'dashboard'         => 'Dashboard',
+    ' Tableau_De_Bord'         => ' Tableau_De_Bord',
     'line_chart'        => 'Graphique',
     'statistics'        => 'Statistiques',
     'opened'            => 'Ouvert',
@@ -951,7 +951,7 @@ return [
     'report'            => 'Rapport',
     'Legend'            => 'LEGENDES',
     'total'             => 'Total',
-    'dashboard_reports' => 'Rapports dashboard',
+    ' Tableau_De_Bord_reports' => 'RapportsTableau_De_Bord',
     /*
       |------------------------------------------------
       |User Page

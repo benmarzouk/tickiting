@@ -31,7 +31,7 @@
 
                     echo '<p>New Update Found: v' . $latest_version . '</p>';
                     $found = true;
-                    if (!is_file("$controller->dir/UPDATES/faveo-helpdesk-master.zip")) {
+                    if (!is_file("$controller->dir/UPDATES/Faveo-helpdesk-master.zip")) {
                         if (key_exists("dodownload", $_GET) && $_GET["dodownload"] == true) {
                             $download_url = $controller->downloadLatestCode();
                             if ($download_url != null) {

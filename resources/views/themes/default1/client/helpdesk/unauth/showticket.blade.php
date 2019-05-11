@@ -81,7 +81,7 @@ $thread = App\Model\helpdesk\Ticket\Ticket_Thread::where('ticket_id', '=', $tick
                 <div class="col-xs-5">
                 </div>
                 <div class="col-xs-1">
-                    <img src="{{asset("lb-faveo/media/images/gifloader.gif")}}"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                    <img src="{{asset("lb-Faveo/media/images/gifloader.gif")}}"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
                 </div>
                 <div class="col-xs-6">
                 </div>

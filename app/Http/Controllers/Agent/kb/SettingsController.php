@@ -78,7 +78,7 @@ class SettingsController extends Controller
             $settings = $settings->whereId('1')->first();
             if (Input::file('logo')) {
                 $name = Input::file('logo')->getClientOriginalName();
-                $destinationPath = 'lb-faveo/dist/image';
+                $destinationPath = 'lb-Faveo/dist/image';
                 $fileName = rand(0000, 9999).'.'.$name;
                 //echo $fileName;
                 Input::file('logo')->move($destinationPath, $fileName);
@@ -88,11 +88,11 @@ class SettingsController extends Controller
                     'width'     => 300,
                     'height'    => 300,
                     'grayscale' => false,
-                ])->save('lb-faveo/dist/image/'.$fileName);
+                ])->save('lb-Faveo/dist/image/'.$fileName);
             }
             if (Input::file('background')) {
                 $name = Input::file('background')->getClientOriginalName();
-                $destinationPath = 'lb-faveo/dist/image';
+                $destinationPath = 'lb-Faveo/dist/image';
                 $fileName = rand(0000, 9999).'.'.$name;
                 echo $fileName;
                 Input::file('background')->move($destinationPath, $fileName);
@@ -102,7 +102,7 @@ class SettingsController extends Controller
                     'width'     => 300,
                     'height'    => 300,
                     'grayscale' => false,
-                ])->save('lb-faveo/dist/image/'.$fileName);
+                ])->save('lb-Faveo/dist/image/'.$fileName);
             }
             /* Check whether function success or not */
             if ($settings->fill($request->except('logo', 'background'))->save() == true) {
@@ -233,18 +233,18 @@ class SettingsController extends Controller
         if (is_null($user->profile_pic)) {
             if ($request->input('gender') == 1) {
                 $name = 'avatar5.png';
-                $destinationPath = 'lb-faveo/dist/img';
+                $destinationPath = 'lb-Faveo/dist/img';
                 $user->profile_pic = $name;
             } elseif ($request->input('gender') == 0) {
                 $name = 'avatar2.png';
-                $destinationPath = 'lb-faveo/dist/img';
+                $destinationPath = 'lb-Faveo/dist/img';
                 $user->profile_pic = $name;
             }
         }
         if (Input::file('profile_pic')) {
             //$extension = Input::file('profile_pic')->getClientOriginalExtension();
             $name = Input::file('profile_pic')->getClientOriginalName();
-            $destinationPath = 'lb-faveo/dist/img';
+            $destinationPath = 'lb-Faveo/dist/img';
             $fileName = rand(0000, 9999).'.'.$name;
             //echo $fileName;
             Input::file('profile_pic')->move($destinationPath, $fileName);

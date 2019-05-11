@@ -194,11 +194,11 @@
             <li class="header">MAIN NAVIGATION</li>
             <li class="treeview">
               <a href="#">
-                <i class="fa fa-dashboard"></i> <span>Dashboard</span> <i class="fa fa-angle-left pull-right"></i>
+                <i class="fa fa- Tableau_De_Bord"></i> <span> Tableau_De_Bord</span> <i class="fa fa-angle-left pull-right"></i>
               </a>
               <ul class="treeview-menu">
-                <li><a href="../../index.html"><i class="fa fa-circle-o"></i> Dashboard v1</a></li>
-                <li><a href="../../index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+                <li><a href="../../index.html"><i class="fa fa-circle-o"></i>Tableau_De_Bord v1</a></li>
+                <li><a href="../../index2.html"><i class="fa fa-circle-o"></i>Tableau_De_Bord v2</a></li>
               </ul>
             </li>
             <li class="treeview active">
@@ -338,7 +338,7 @@
             <small>Blank example to the boxed layout</small>
           </h1>
           <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+            <li><a href="#"><i class="fa fa- Tableau_De_Bord"></i> Home</a></li>
             <li><a href="#">Examples</a></li>
             <li class="active">Blank page</li>
           </ol>

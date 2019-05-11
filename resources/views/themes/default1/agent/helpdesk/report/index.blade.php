@@ -16,7 +16,7 @@
 class="active"
 @stop
 
-@section('dashboard-bar')
+@section(' Tableau_De_Bord-bar')
 active
 @stop
 
@@ -24,7 +24,7 @@ active
 <h1>{!! Lang::get('lang.report') !!}</h1>
 @stop
 
-@section('dashboard')
+@section(' Tableau_De_Bord')
 class="active"
 @stop
 
@@ -47,8 +47,8 @@ class="active"
     {{Session::get('fails')}}
 </div>
 @endif
-<link type="text/css" href="{{asset("lb-faveo/css/bootstrap-datetimepicker4.7.14.min.css")}}" rel="stylesheet">
-{{-- <script src="{{asset("lb-faveo/dist/js/bootstrap-datetimepicker4.7.14.min.js")}}" type="text/javascript"></script> --}}
+<link type="text/css" href="{{asset("lb-Faveo/css/bootstrap-datetimepicker4.7.14.min.css")}}" rel="stylesheet">
+{{-- <script src="{{asset("lb-Faveo/dist/js/bootstrap-datetimepicker4.7.14.min.js")}}" type="text/javascript"></script> --}}
  
 <div class="box box-info">
     <div class="box-header with-border">
@@ -224,9 +224,9 @@ class="active"
 </form>
 
 <div id="refresh"> 
-    <script src="{{asset("lb-faveo/plugins/chartjs/Chart.min.js")}}" type="text/javascript"></script>
+    <script src="{{asset("lb-Faveo/plugins/chartjs/Chart.min.js")}}" type="text/javascript"></script>
 </div>
-<script src="{{asset("lb-faveo/plugins/chartjs/Chart.min.js")}}" type="text/javascript"></script>
+<script src="{{asset("lb-Faveo/plugins/chartjs/Chart.min.js")}}" type="text/javascript"></script>
 <script type="text/javascript">
     var result1a;
 //    var help_topic_global;
@@ -684,6 +684,6 @@ class="active"
 
 
 
-<script src="{{asset("lb-faveo/plugins/moment-develop/moment.js")}}" type="text/javascript"></script>
-<script src="{{asset("lb-faveo/js/bootstrap-datetimepicker4.7.14.min.js")}}" type="text/javascript"></script>
+<script src="{{asset("lb-Faveo/plugins/moment-develop/moment.js")}}" type="text/javascript"></script>
+<script src="{{asset("lb-Faveo/js/bootstrap-datetimepicker4.7.14.min.js")}}" type="text/javascript"></script>
 @stop

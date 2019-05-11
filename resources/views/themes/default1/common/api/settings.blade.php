@@ -144,7 +144,7 @@ class="active"
         </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-<script src="{{asset("lb-faveo/js/ajax-jquery.min.js")}}"></script>
+<script src="{{asset("lb-Faveo/js/ajax-jquery.min.js")}}"></script>
 <script type="text/javascript">
 jQuery(document).ready(function() {
 // Close a ticket

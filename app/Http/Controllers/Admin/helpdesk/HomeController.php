@@ -6,7 +6,7 @@ namespace App\Http\Controllers\Admin\helpdesk;
  * -----------------------------------------------
  * HelptopicController
  * -----------------------------------------------
- * This controller renders your application's "dashboard" for users that
+ * This controller renders your application's " Tableau_De_Bord" for users that
  * are authenticated. Of course, you are free to change or remove the
  * controller as you wish. It is just here to get your app started!
  *
@@ -25,12 +25,12 @@ class HomeController extends Controller
     }
 
     /**
-     * Show the application dashboard to the user.
+     * Show the applicationTableau_De_Bord to the user.
      *
      * @return Response
      */
     public function index()
     {
-        return view('themes/default1/admin/dashboard');
+        return view('themes/default1/admin/ Tableau_De_Bord');
     }
 }

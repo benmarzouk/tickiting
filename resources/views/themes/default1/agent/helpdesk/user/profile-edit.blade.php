@@ -1,10 +1,10 @@
 @extends('themes.default1.agent.layout.agent')
 
-@section('Dashboard')
+@section(' Tableau_De_Bord')
 class="active"
 @stop
 
-@section('dashboard-bar')
+@section(' Tableau_De_Bord-bar')
 active
 @stop
 
@@ -203,7 +203,7 @@ class="active"
                         <div class="row">
                             <div class="col-md-12">
                             <div id="loader2" style="display:none">
-                                <center><img src="{{asset('lb-faveo/media/images/gifloader.gif')}}"></center>
+                                <center><img src="{{asset('lb-Faveo/media/images/gifloader.gif')}}"></center>
                             </div>
                             <div id="verify-success" style="display:none" class="alert alert-success alert-dismissable">
                                 <i class="fa  fa-check-circle"> </i>

@@ -61,7 +61,7 @@ $category_id = $all->pluck('category_id')->toArray();
                 <article class="comment-body">
                     <footer class="comment-meta">
                         <div class="comment-author">
-                            <img src="{{asset("lb-faveo/media/images/avatar_1.png")}}" alt="" height="50" width="50" class="avatar" />
+                            <img src="{{asset("lb-Faveo/media/images/avatar_1.png")}}" alt="" height="50" width="50" class="avatar" />
                             <b class="fn"><a href="#" rel="external" class="url">{!! $comment->name !!}</a></b>
                         </div><!-- .comment-author -->
 

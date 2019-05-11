@@ -1,10 +1,10 @@
 @extends('themes.default1.agent.layout.agent')
 
-@section('Dashboard')
+@section(' Tableau_De_Bord')
 class="active"
 @stop
 
-@section('dashboard-bar')
+@section(' Tableau_De_Bord-bar')
 active
 @stop
 

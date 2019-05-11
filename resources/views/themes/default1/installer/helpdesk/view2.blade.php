@@ -51,7 +51,7 @@ class TestResult {
     This test will check prerequisites required to install Faveo
     
     <br/><br/>
-    <p>NOTE:&nbsp;FAVEO doesn't work properly without JavaScript.  In order to install and run FAVEO to its full extent please make sure JavaScript is enabled in your browser.</p>
+    <p>NOTE:&nbsp;Faveo doesn't work properly without JavaScript.  In order to install and run Faveo to its full extent please make sure JavaScript is enabled in your browser.</p>
      <?php
 
 function validate_php(&$results) {

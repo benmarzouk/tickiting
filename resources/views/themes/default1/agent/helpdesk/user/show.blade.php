@@ -722,7 +722,7 @@ $(document).ready(function(){
         
         <div class="row">
             <div class="col-md-12">
-                <link type="text/css" href="{{asset("lb-faveo/css/bootstrap-datetimepicker4.7.14.min.css")}}" rel="stylesheet">
+                <link type="text/css" href="{{asset("lb-Faveo/css/bootstrap-datetimepicker4.7.14.min.css")}}" rel="stylesheet">
                 <div class="box box-info">
                     <div class="box-header with-border">
                         @if($users->role=='user')
@@ -877,7 +877,7 @@ $(document).ready(function(){
                             <div class="col-xs-5">
                             </div>
                             <div class="col-xs-2">
-                                <img src="{{asset("lb-faveo/media/images/gifloader.gif")}}">
+                                <img src="{{asset("lb-Faveo/media/images/gifloader.gif")}}">
                             </div>
                             <div class="col-xs-5">
                             </div>
@@ -951,7 +951,7 @@ $(document).ready(function(){
                         <div class="col-md-4">
                         </div>
                         <div class="col-md-6" id="assign_loader" style="display:none;">
-                            <img src="{{asset("lb-faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
+                            <img src="{{asset("lb-Faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
                         </div>
                     </div>
                     <div id="assign_body">
@@ -1001,7 +1001,7 @@ $(document).ready(function(){
                         <div class="col-md-4">
                         </div>
                         <div class="col-md-6" id="assign_loader" style="display:none;">
-                            <img src="{{asset("lb-faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
+                            <img src="{{asset("lb-Faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
                         </div>
                     </div>
                     <div id="assign_body">
@@ -1248,9 +1248,9 @@ $(document).ready(function(){
         });
     </script>
     <div id="refresh"> 
-        <script src="{{asset("lb-faveo/plugins/chartjs/Chart.min.js")}}" type="text/javascript"></script>
+        <script src="{{asset("lb-Faveo/plugins/chartjs/Chart.min.js")}}" type="text/javascript"></script>
     </div>
-    <script src="{{asset("lb-faveo/plugins/chartjs/Chart.min.js")}}" type="text/javascript"></script>
+    <script src="{{asset("lb-Faveo/plugins/chartjs/Chart.min.js")}}" type="text/javascript"></script>
     <script type="text/javascript">
         $(document).ready(function() {
             $.getJSON("../user-agen/<?php echo $users->id; ?>", function(result) {
@@ -1513,6 +1513,6 @@ $(document).ready(function(){
             });
         });
     </script>
-    <script src="{{asset("lb-faveo/plugins/moment-develop/moment.js")}}" type="text/javascript"></script>
-    <script src="{{asset("lb-faveo/js/bootstrap-datetimepicker4.7.14.min.js")}}" type="text/javascript"></script>
+    <script src="{{asset("lb-Faveo/plugins/moment-develop/moment.js")}}" type="text/javascript"></script>
+    <script src="{{asset("lb-Faveo/js/bootstrap-datetimepicker4.7.14.min.js")}}" type="text/javascript"></script>
     @stop

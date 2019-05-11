@@ -72,7 +72,7 @@ class InstallController extends Controller
     /**
      * Get prerequisites (step 2).
      *
-     * Checking the extensions enabled required for installing the faveo
+     * Checking the extensions enabled required for installing the Faveo
      * without which the project cannot be executed properly
      *
      * @return type view
@@ -441,7 +441,7 @@ class InstallController extends Controller
         $ENV['MAIL_PASSWORD'] = 'null';
         $ENV['CACHE_DRIVER'] = 'file';
         $ENV['SESSION_DRIVER'] = 'file';
-        $ENV['SESSION_COOKIE_NAME'] = 'faveo_'.rand(0, 10000);
+        $ENV['SESSION_COOKIE_NAME'] = 'Faveo_'.rand(0, 10000);
         $ENV['QUEUE_DRIVER'] = 'sync';
         $ENV['JWT_TTL'] = 4;
         $ENV['FCM_SERVER_KEY'] = 'AIzaSyCyx5OFnsRFUmDLTMbPV50ZMDUGSG-bLw4';

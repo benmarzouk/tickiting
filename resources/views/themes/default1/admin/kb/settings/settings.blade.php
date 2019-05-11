@@ -72,7 +72,7 @@
                            {!! Form::label('logo',Lang::get('lang.logo')) !!}
                            {!! Form::file('logo') !!}
                         @if($settings->logo)
-                           <img src="{{asset('lb-faveo/dist/image/'.$settings->logo)}}" />
+                           <img src="{{asset('lb-Faveo/dist/image/'.$settings->logo)}}" />
                            <a href="{{url('delete-logo/'.$settings->id)}}">{{Lang::get('lang.delete')}}</a>
                         @endif
                     </div>

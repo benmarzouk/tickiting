@@ -12,7 +12,7 @@ class CreateFaveoQueuesTable extends Migration
      */
     public function up()
     {
-        Schema::create('faveo_queues', function (Blueprint $table) {
+        Schema::create('Faveo_queues', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('service_id');
             $table->string('key');
@@ -28,6 +28,6 @@ class CreateFaveoQueuesTable extends Migration
      */
     public function down()
     {
-        Schema::drop('faveo_queues');
+        Schema::drop('Faveo_queues');
     }
 }

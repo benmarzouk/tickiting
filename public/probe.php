@@ -51,7 +51,7 @@ $extensions = [
     </head>
     <body>
         <div style="height: auto; width: 500; margin: auto;">
-            <h1 style="text-align: center; color: #9DD1DE">FAVEO PROBE</h1>
+            <h1 style="text-align: center; color: #9DD1DE">Faveo PROBE</h1>
 <?php
 $basePath = str_replace('public', '', __DIR__);
 $storagePermission = substr(sprintf('%o', fileperms($basePath.DIRECTORY_SEPARATOR.'storage')), -3);

@@ -2,7 +2,7 @@
  * Author: Abdullah A Almsaeed
  * Date: 4 Jan 2014
  * Description:
- *      This is a demo file used only for the main dashboard (index.html)
+ *      This is a demo file used only for the mainTableau_De_Bord (index.html)
  **/
 "use strict";
 
@@ -13,7 +13,7 @@ $(function () {
     checkboxClass: 'icheckbox_flat-blue',
     radioClass: 'iradio_flat-blue'
   });
-  //Make the dashboard widgets sortable Using jquery UI
+  //Make theTableau_De_Bord widgets sortable Using jquery UI
   $(".connectedSortable").sortable({
     placeholder: "sort-highlight",
     connectWith: ".connectedSortable",
@@ -202,7 +202,7 @@ $(function () {
 
   /* BOX REFRESH PLUGIN EXAMPLE (usage with morris charts) */
   $("#loading-example").boxRefresh({
-    source: "ajax/dashboard-boxrefresh-demo.php",
+    source: "ajax/ Tableau_De_Bord-boxrefresh-demo.php",
     onLoadDone: function (box) {
       bar = new Morris.Bar({
         element: 'bar-chart',

@@ -26,7 +26,7 @@
 </h4>
 <h4 id="loading-screen" class="login-box-msg" style="display:none">
 
-<center>Wait we are sending a new OTP code to your number.<br/><img src="{{asset('lb-faveo/media/images/gifloader.gif')}}"></center>
+<center>Wait we are sending a new OTP code to your number.<br/><img src="{{asset('lb-Faveo/media/images/gifloader.gif')}}"></center>
 </h4>
 
 <div id="success" style="display:none" class="alert alert-success alert-dismissable">

@@ -2,64 +2,64 @@
 <html>
     <head>
         <meta charset="UTF-8" ng-app="myApp">
-        <title>1Way | HELP DESK</title>
+        <title>1WAY | HELP DESK</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <meta name="_token" content="{!! csrf_token() !!}"/>
-        <!-- faveo favicon -->
-        <link href="{{asset("lb-faveo/media/images/favicon.ico")}}" rel="shortcut icon">
+        <!-- Faveo favicon -->
+        <link href="{{asset("lb-Faveo/media/images/favicon.ico")}}" rel="shortcut icon">
         <!-- Bootstrap 3.3.2 -->
-        <link href="{{asset("lb-faveo/css/bootstrap.min.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/css/bootstrap.min.css")}}" rel="stylesheet" type="text/css" />
         <!-- Font Awesome Icons -->
-        <link href="{{asset("lb-faveo/css/font-awesome.min.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/css/font-awesome.min.css")}}" rel="stylesheet" type="text/css" />
         <!-- Ionicons -->
-        <link href="{{asset("lb-faveo/css/ionicons.min.css")}}" rel="stylesheet"  type="text/css" />
+        <link href="{{asset("lb-Faveo/css/ionicons.min.css")}}" rel="stylesheet"  type="text/css" />
         <!-- Theme style -->
-        <link href="{{asset("lb-faveo/css/AdminLTE.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/css/AdminLTE.css")}}" rel="stylesheet" type="text/css" />
         <!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->
-        <link href="{{asset("lb-faveo/css/skins/_all-skins.min.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/css/skins/_all-skins.min.css")}}" rel="stylesheet" type="text/css" />
         <!-- iCheck -->
-        <link href="{{asset("lb-faveo/plugins/iCheck/flat/blue.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/plugins/iCheck/flat/blue.css")}}" rel="stylesheet" type="text/css" />
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <link href="{{asset("lb-faveo/css/tabby.css")}}" rel="stylesheet" type="text/css"/>
+        <link href="{{asset("lb-Faveo/css/tabby.css")}}" rel="stylesheet" type="text/css"/>
 
-        <link href="{{asset("lb-faveo/css/jquerysctipttop.css")}}" rel="stylesheet" type="text/css"/>
+        <link href="{{asset("lb-Faveo/css/jquerysctipttop.css")}}" rel="stylesheet" type="text/css"/>
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <link href="{{asset("lb-faveo/css/editor.css")}}" rel="stylesheet" type="text/css"/>
+        <link href="{{asset("lb-Faveo/css/editor.css")}}" rel="stylesheet" type="text/css"/>
 
-        <link href="{{asset("lb-faveo/css/jquery.ui.css")}}" rel="stylesheet" rel="stylesheet"/>
+        <link href="{{asset("lb-Faveo/css/jquery.ui.css")}}" rel="stylesheet" rel="stylesheet"/>
 
-        <link href="{{asset("lb-faveo/plugins/datatables/dataTables.bootstrap.css")}}" rel="stylesheet"  type="text/css"/>
+        <link href="{{asset("lb-Faveo/plugins/datatables/dataTables.bootstrap.css")}}" rel="stylesheet"  type="text/css"/>
 
-        <link href="{{asset("lb-faveo/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css")}}" rel="stylesheet" type="text/css"/>
+        <link href="{{asset("lb-Faveo/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css")}}" rel="stylesheet" type="text/css"/>
 
-        <link href="{{asset("lb-faveo/css/faveo-css.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/css/Faveo-css.css")}}" rel="stylesheet" type="text/css" />
 
-        <link href="{{asset("lb-faveo/css/notification-style.css")}}" rel="stylesheet" type="text/css" >
+        <link href="{{asset("lb-Faveo/css/notification-style.css")}}" rel="stylesheet" type="text/css" >
 
-        <link href="{{asset("lb-faveo/css/jquery.rating.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/css/jquery.rating.css")}}" rel="stylesheet" type="text/css" />
         <!-- Select2 -->
-        <link href="{{asset("lb-faveo/plugins/select2/select2.min.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/plugins/select2/select2.min.css")}}" rel="stylesheet" type="text/css" />
 
         <link href="{{asset("css/close-button.css")}}" rel="stylesheet" type="text/css" />
         <!--Daterangepicker-->
-        <link rel="stylesheet" href="{{asset("lb-faveo/plugins/daterangepicker/daterangepicker.css")}}" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="{{asset("lb-Faveo/plugins/daterangepicker/daterangepicker.css")}}" rel="stylesheet" type="text/css" />
         <!--calendar -->
         <!-- fullCalendar 2.2.5-->
-        <link href="{{asset('lb-faveo/plugins/fullcalendar/fullcalendar.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset('lb-Faveo/plugins/fullcalendar/fullcalendar.min.css')}}" rel="stylesheet" type="text/css" />
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
-        <script src="{{asset("lb-faveo/js/jquery-2.1.4.js")}}" type="text/javascript"></script>
+        <script src="{{asset("lb-Faveo/js/jquery-2.1.4.js")}}" type="text/javascript"></script>
 
-        <script src="{{asset("lb-faveo/js/jquery2.1.1.min.js")}}" type="text/javascript"></script>
+        <script src="{{asset("lb-Faveo/js/jquery2.1.1.min.js")}}" type="text/javascript"></script>
 
         @yield('HeadInclude')
     </head>
     <body class="skin-blue fixed">
         <div class="wrapper">
             <header class="main-header">
-                <a href="http://www.faveohelpdesk.com" class="logo"><img src="{{ asset('lb-faveo/media/images/logo.png')}}" width="100px;"></a>
+                <a href="http://www.Faveohelpdesk.com" class="logo"><img src="{{ asset('lb-Faveo/media/images/logo.png')}}" width="100px;"></a>
                 <?php
                 $company = App\Model\helpdesk\Settings\Company::where('id', '=', '1')->first();
                 if ($company != null) {
@@ -98,7 +98,7 @@
                     <div class="collapse navbar-collapse" id="navbar-collapse">
                         @if($replacetop==0)
                         <ul class="tabs tabs-horizontal nav navbar-nav navbar-left">
-                            <li @yield('Dashboard')><a id="dash" data-target="#tabA" href="{{URL::route('dashboard')}}" onclick="clickDashboard(event);">{!! Lang::get('lang.dashboard') !!}</a></li>
+                            <li @yield(' Tableau_De_Bord')><a id="dash" data-target="#tabA" href="{{URL::route(' Tableau_De_Bord')}}" onclick="click Tableau_De_Bord(event);">{!! Lang::get('lang. Tableau_De_Bord') !!}</a></li>
                             <li @yield('Users')><a data-target="#tabB" href="#">{!! Lang::get('lang.users') !!}</a></li>
                             <li @yield('Tickets')><a data-target="#tabC" href="#">{!! Lang::get('lang.tickets') !!}</a></li>
                             <li @yield('Tools')><a data-target="#tabD" href="#">{!! Lang::get('lang.tools') !!}</a></li>
@@ -172,7 +172,7 @@
                                     </ul>
                             </li>
                             <li class="footer no-border"><div class="col-md-5"></div><div class="col-md-2">
-                                    <img src="{{asset("lb-faveo/media/images/gifloader.gif")}}" style="display: none;" id="notification-loader">
+                                    <img src="{{asset("lb-Faveo/media/images/gifloader.gif")}}" style="display: none;" id="notification-loader">
                                 </div><div class="col-md-5"></div></li>
                             <li class="footer"><a href="{{ url('notifications-list')}}">View all</a>
                             </li>
@@ -405,7 +405,7 @@
                     <div class="collapse navbar-collapse" id="navbar-collapse">
                         <div class="tabs-content">
                             @if($replacetop==0)
-                            <div class="tabs-pane @yield('dashboard-bar')"  id="tabA">
+                            <div class="tabs-pane @yield(' Tableau_De_Bord-bar')"  id="tabA">
                                 <ul class="nav navbar-nav">
                                 </ul>
                             </div>
@@ -461,43 +461,43 @@
                 <div class="pull-right hidden-xs">
                     <b>{!! Lang::get('lang.version') !!}</b> {!! Config::get('app.version') !!}
                 </div>
-                <strong>{!! Lang::get('lang.copyright') !!} &copy; {!! date('Y') !!}  <a href="{!! $company->website !!}" target="_blank">{!! $company->company_name !!}</a>.</strong> {!! Lang::get('lang.all_rights_reserved') !!}. {!! Lang::get('lang.powered_by') !!} <a href="http://www.faveohelpdesk.com/" target="_blank">Faveo</a>
+                <strong>{!! Lang::get('lang.copyright') !!} &copy; {!! date('Y') !!}  <a href="{!! $company->website !!}" target="_blank">{!! $company->company_name !!}</a>.</strong> {!! Lang::get('lang.all_rights_reserved') !!}. {!! Lang::get('lang.powered_by') !!} <a href="http://www.Faveohelpdesk.com/" target="_blank">Faveo</a>
             </footer>
         </div><!-- ./wrapper -->
 
-    <script src="{{asset("lb-faveo/js/ajax-jquery.min.js")}}" type="text/javascript"></script>
+    <script src="{{asset("lb-Faveo/js/ajax-jquery.min.js")}}" type="text/javascript"></script>
 
-    <script src="{{asset("lb-faveo/js/bootstrap-datetimepicker4.7.14.min.js")}}" type="text/javascript"></script>
+    <script src="{{asset("lb-Faveo/js/bootstrap-datetimepicker4.7.14.min.js")}}" type="text/javascript"></script>
     <!-- Bootstrap 3.3.2 JS -->
-    <script src="{{asset("lb-faveo/js/bootstrap.min.js")}}" type="text/javascript"></script>
+    <script src="{{asset("lb-Faveo/js/bootstrap.min.js")}}" type="text/javascript"></script>
     <!-- Slimscroll -->
-    <script src="{{asset("lb-faveo/plugins/slimScroll/jquery.slimscroll.min.js")}}" type="text/javascript"></script>
+    <script src="{{asset("lb-Faveo/plugins/slimScroll/jquery.slimscroll.min.js")}}" type="text/javascript"></script>
     <!-- FastClick -->
-    <script src="{{asset("lb-faveo/plugins/fastclick/fastclick.min.js")}}"  type="text/javascript"></script>
+    <script src="{{asset("lb-Faveo/plugins/fastclick/fastclick.min.js")}}"  type="text/javascript"></script>
     <!-- AdminLTE App -->
-    <script src="{{asset("lb-faveo/js/app.min.js")}}" type="text/javascript"></script>
+    <script src="{{asset("lb-Faveo/js/app.min.js")}}" type="text/javascript"></script>
 
     <!-- iCheck -->
-    <script src="{{asset("lb-faveo/plugins/iCheck/icheck.min.js")}}" type="text/javascript"></script>
+    <script src="{{asset("lb-Faveo/plugins/iCheck/icheck.min.js")}}" type="text/javascript"></script>
     <!-- jquery ui -->
-    <script src="{{asset("lb-faveo/js/jquery.ui.js")}}" type="text/javascript"></script>
+    <script src="{{asset("lb-Faveo/js/jquery.ui.js")}}" type="text/javascript"></script>
 
-    <script src="{{asset("lb-faveo/plugins/datatables/dataTables.bootstrap.js")}}" type="text/javascript"></script>
+    <script src="{{asset("lb-Faveo/plugins/datatables/dataTables.bootstrap.js")}}" type="text/javascript"></script>
 
-    <script src="{{asset("lb-faveo/plugins/datatables/jquery.dataTables.js")}}" type="text/javascript"></script>
+    <script src="{{asset("lb-Faveo/plugins/datatables/jquery.dataTables.js")}}" type="text/javascript"></script>
     <!-- Page Script -->
-    <script src="{{asset("lb-faveo/js/jquery.dataTables1.10.10.min.js")}}" type="text/javascript" ></script>
+    <script src="{{asset("lb-Faveo/js/jquery.dataTables1.10.10.min.js")}}" type="text/javascript" ></script>
 
-    <script type="text/javascript" src="{{asset("lb-faveo/plugins/datatables/dataTables.bootstrap.js")}}"  type="text/javascript"></script>
+    <script type="text/javascript" src="{{asset("lb-Faveo/plugins/datatables/dataTables.bootstrap.js")}}"  type="text/javascript"></script>
 
-    <script src="{{asset("lb-faveo/js/jquery.rating.pack.js")}}" type="text/javascript"></script>
+    <script src="{{asset("lb-Faveo/js/jquery.rating.pack.js")}}" type="text/javascript"></script>
 
-    <script src="{{asset("lb-faveo/plugins/select2/select2.full.min.js")}}" type="text/javascript"></script>
+    <script src="{{asset("lb-Faveo/plugins/select2/select2.full.min.js")}}" type="text/javascript"></script>
 
-    <script src="{{asset("lb-faveo/plugins/moment/moment.js")}}" type="text/javascript"></script>
+    <script src="{{asset("lb-Faveo/plugins/moment/moment.js")}}" type="text/javascript"></script>
     <!-- full calendar-->
-    <script src="{{asset('lb-faveo/plugins/fullcalendar/fullcalendar.min.js')}}" type="text/javascript"></script>
-    <script src="{{asset('lb-faveo/plugins/daterangepicker/daterangepicker.js')}}" type="text/javascript"></script>
+    <script src="{{asset('lb-Faveo/plugins/fullcalendar/fullcalendar.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('lb-Faveo/plugins/daterangepicker/daterangepicker.js')}}" type="text/javascript"></script>
     <script>
         $(document).ready(function () {
         $('.noti_User').click(function () {
@@ -573,11 +573,11 @@
                 });
 </script>
 
-<script src="{{asset("lb-faveo/js/tabby.js")}}" type="text/javascript"></script>
+<script src="{{asset("lb-Faveo/js/tabby.js")}}" type="text/javascript"></script>
 
-<script src="{{asset("lb-faveo/plugins/filebrowser/plugin.js")}}" type="text/javascript"></script>
+<script src="{{asset("lb-Faveo/plugins/filebrowser/plugin.js")}}" type="text/javascript"></script>
 
-<script src="{{asset("lb-faveo/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js")}}" type="text/javascript"></script>
+<script src="{{asset("lb-Faveo/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js")}}" type="text/javascript"></script>
 
 <script type="text/javascript">
             $.ajaxSetup({
@@ -585,11 +585,11 @@
             });
 </script>
 <script type="text/javascript">
-    function clickDashboard(e) {
+    function click Tableau_De_Bord(e) {
         if (e.ctrlKey === true) {
-            window.open('{{URL::route("dashboard")}}', '_blank');
+            window.open('{{URL::route(" Tableau_De_Bord")}}', '_blank');
         } else {
-            window.location = "{{URL::route('dashboard')}}";
+            window.location = "{{URL::route(' Tableau_De_Bord')}}";
         }
     }
     function clickReport(e) {

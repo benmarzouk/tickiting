@@ -1,6 +1,6 @@
 @extends('themes.default1.client.layout.client')
 @section('HeadInclude')
-        <link href="{{asset("lb-faveo/css/AdminLTE.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/css/AdminLTE.css")}}" rel="stylesheet" type="text/css" />
 @stop
 <?php $user = App\User::where('id', '=', $ticket->user_id)->first();?>
 <?php $assignedto = App\User::where('id', '=', $ticket->assigned_to)->first();?>
@@ -103,7 +103,7 @@ echo UTC::usertimezone(date_format($time, 'd/m/Y H:i:s'));
                         <div class="col-md-4">
                         </div>
                         <div class="col-md-4">
-                            <img src="{{asset("lb-faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
+                            <img src="{{asset("lb-Faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
                         </div>
                 </div>
                 <div id="hide2">
@@ -182,7 +182,7 @@ echo UTC::usertimezone(date_format($time, 'd/m/Y H:i:s'));
                         <div class="col-md-4">
                         </div>
                         <div class="col-md-4">
-                            <img src="{{asset("lb-faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
+                            <img src="{{asset("lb-Faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
                         </div>
                         </br>
                         </br>
@@ -206,7 +206,7 @@ echo UTC::usertimezone(date_format($time, 'd/m/Y H:i:s'));
                                         {!! Form::label('To', 'To:') !!}
                                     </div>
                                     <div class="col-md-10">
-                                        {!! Form::text('To','support@faveohelpdesk.com',array('disabled'),['id'=>'email','class'=>'form-control','style'=>'width:55%'])!!}
+                                        {!! Form::text('To','support@Faveohelpdesk.com',array('disabled'),['id'=>'email','class'=>'form-control','style'=>'width:55%'])!!}
                                         {!! $errors->first('To', '<spam class="help-block text-red">:message</spam>') !!}
                         
                                         
@@ -598,7 +598,7 @@ $data = $ConvDate[0];
                         <div class="col-md-2">
                         </div>
                         <div class="col-md-9">
-                            <img src="{{asset("lb-faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
+                            <img src="{{asset("lb-Faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
                         </div>
                     </div>
                 </div>
@@ -1030,7 +1030,7 @@ function AddCcc(){
                         $("#alert21").show();
                         $('#message-success2').html(message);
                         setInterval(function(){$("#dismiss21").trigger("click"); },2000);   
-                        // $("#refresh1").load( "http://localhost/faveo/public/thread/{{$ticket->id}}   #refresh1");
+                        // $("#refresh1").load( "http://localhost/Faveo/public/thread/{{$ticket->id}}   #refresh1");
                     }
                     else
                     {
@@ -1106,7 +1106,7 @@ function AddCcc(){
 
 //             $.ajax({
 //                 type        :   "GET",
-//                 url         :   "http://localhost/faveo/public/ticket/assign/{{$ticket->id}}",
+//                 url         :   "http://localhost/Faveo/public/ticket/assign/{{$ticket->id}}",
 //                 dataType    :   'html',
 //                 data        :   ({data2:data1}) ,
 //                 success : function(response) {
@@ -1126,7 +1126,7 @@ function AddCcc(){
     $("#search").autocomplete({
         source: function(request, response) {
             $.ajax({
-                url: 'http://localhost/faveo/public/change/owner',
+                url: 'http://localhost/Faveo/public/change/owner',
                 dataType: "json",
                 data: {
                     name_startsWith: request.term,

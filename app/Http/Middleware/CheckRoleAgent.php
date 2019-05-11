@@ -25,6 +25,6 @@ class CheckRoleAgent
             return $next($request);
         }
 
-        return redirect('dashboard')->with('fails', 'You are not Autherised');
+        return redirect(' Tableau_De_Bord')->with('fails', 'You are not Autherised');
     }
 }

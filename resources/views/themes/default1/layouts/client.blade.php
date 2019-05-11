@@ -11,12 +11,12 @@
         <!-- Ionicons -->
         <link href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet" type="text/css" />
         <!-- fullCalendar 2.2.5-->
-        <link href="{{asset("lb-faveo/plugins/fullcalendar/fullcalendar.min.css")}}" rel="stylesheet" type="text/css" />
-        <link href="{{asset("lb-faveo/plugins/fullcalendar/fullcalendar.print.css")}}" rel="stylesheet" type="text/css" media='print' />
-        <link href="{{asset("lb-faveo/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/plugins/fullcalendar/fullcalendar.min.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/plugins/fullcalendar/fullcalendar.print.css")}}" rel="stylesheet" type="text/css" media='print' />
+        <link href="{{asset("lb-Faveo/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css")}}" rel="stylesheet" type="text/css" />
         <!-- Theme style -->
-        <link href="{{asset("lb-faveo/dist/css/app.css")}}" rel="stylesheet" type="text/css" />
-        <link href="{{asset("lb-faveo/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/dist/css/app.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css")}}" rel="stylesheet" type="text/css" />
         {{-- // <script src="ckeditor/ckeditor.js"></script> --}}
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -39,7 +39,7 @@
 					<a href="{{url('home')}}" rel="home">
 				@endif
                 @if($company->use_logo == 1)
-                	<img src="{{asset('lb-faveo/dist')}}{{'/'}}{{$company->logo}}" alt="User Image" width="200px" height="200px"/>
+                	<img src="{{asset('lb-Faveo/dist')}}{{'/'}}{{$company->logo}}" alt="User Image" width="200px" height="200px"/>
                 @else
                 	@if($system->name)
                 		{!! $system->name !!}
@@ -64,7 +64,7 @@
 									<li>
 										<div class="banner-wrapper user-menu text-center clearfix">
 											@if(Auth::user()->profile_pic)
-                                        		<img src="{{asset('lb-faveo/dist/img')}}{{'/'}}{{Auth::user()->profile_pic}}"class="img-circle" alt="User Image" height="80" width="80"/>
+                                        		<img src="{{asset('lb-Faveo/dist/img')}}{{'/'}}{{Auth::user()->profile_pic}}"class="img-circle" alt="User Image" height="80" width="80"/>
                                          	@else
 	                                            <img src="{{ Gravatar::src(Auth::user()->email) }}" class="img-circle" alt="User Image">
                                     		@endif
@@ -227,7 +227,7 @@ $footer4 = App\Model\helpdesk\Theme\Footer4::whereId('1')->first();
 					<hr/>
                     <div class="row">
 						<div class="site-info col-md-6">
-                            <p class="text-muted">Copyright &copy; {!! date('Y') !!}  <a href="{!! $company->website !!}">{!! $company->company_name !!}</a>. All rights reserved. Powered by <a href="http://www.faveohelpdesk.com/">Faveo</a></p>
+                            <p class="text-muted">Copyright &copy; {!! date('Y') !!}  <a href="{!! $company->website !!}">{!! $company->company_name !!}</a>. All rights reserved. Powered by <a href="http://www.Faveohelpdesk.com/">Faveo</a></p>
                         </div>
 					</div>
 		</footer><!-- #colophon -->
@@ -236,10 +236,10 @@ $footer4 = App\Model\helpdesk\Theme\Footer4::whereId('1')->first();
                     <!-- Bootstrap 3.3.2 JS -->
                     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js" type="text/javascript"></script>
                     <!-- Slimscroll -->
-					<script src="{{asset("lb-faveo/dist/js/superfish.js")}}" type="text/javascript"></script>
-                    <script src="{{asset("lb-faveo/dist/js/mobilemenu.js")}}" type="text/javascript"></script>
-                    <script src="{{asset("lb-faveo/dist/js/know.js")}}" type="text/javascript"></script>
-                    <script src="{{asset("lb-faveo/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js")}}" type="text/javascript"></script>
+					<script src="{{asset("lb-Faveo/dist/js/superfish.js")}}" type="text/javascript"></script>
+                    <script src="{{asset("lb-Faveo/dist/js/mobilemenu.js")}}" type="text/javascript"></script>
+                    <script src="{{asset("lb-Faveo/dist/js/know.js")}}" type="text/javascript"></script>
+                    <script src="{{asset("lb-Faveo/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js")}}" type="text/javascript"></script>
                     <script>
                         $(function () {
                         //Add text editor

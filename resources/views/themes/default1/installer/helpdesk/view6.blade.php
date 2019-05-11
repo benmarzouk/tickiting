@@ -22,7 +22,7 @@ active
 
 @section('content')
 
-        <a class="twitter-share-button" target="_blank" href="https://twitter.com/intent/tweet?text=I just set up a new HELPDESK with @faveohelpdesk www.faveohelpdesk.com">
+        <a class="twitter-share-button" target="_blank" href="https://twitter.com/intent/tweet?text=I just set up a new HELPDESK with @Faveohelpdesk www.Faveohelpdesk.com">
             <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ-uhinU3OzXKj9zlFO7dFxHaChqyHPcWWg5nWgMqYt6N5b3knK" style="width: 86px; float: right;">
         </a>
 
@@ -43,7 +43,7 @@ active
                     </li>
         @else
 
-          <li class="setup-product"><a class="button button-primary button-large" href="{!! url('auth/login') !!}" style="float: none; text-align: center; font-size: 24px;    padding: 15px;     line-height: 1;">{!! Lang::get('lang.login_to_faveo') !!}</a>
+          <li class="setup-product"><a class="button button-primary button-large" href="{!! url('auth/login') !!}" style="float: none; text-align: center; font-size: 24px;    padding: 15px;     line-height: 1;">{!! Lang::get('lang.login_to_Faveo') !!}</a>
                     </li>
             @endif
 
@@ -56,7 +56,7 @@ active
                 <ul>
                     <li class="video-walkthrough"><a target="_blank" href="https://www.youtube.com/channel/UC-eqh-h241b1janp6sU7Iiw">{!! Lang::get('lang.video_walk_through') !!}</a>
                     </li>
-                    <li class="sidekick"><a target="_blank" href="https://www.support.faveohelpdesk.com/knowledgebase">{!! Lang::get('lang.knowledge_base') !!}</a>
+                    <li class="sidekick"><a target="_blank" href="https://www.support.Faveohelpdesk.com/knowledgebase">{!! Lang::get('lang.knowledge_base') !!}</a>
                     </li>
 
                     <li class="newsletter"><a href="mailto:support@ladybirdweb.com">{!! Lang::get('lang.email_support') !!}</a>
@@ -70,5 +70,5 @@ active
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    <script src="{{asset("lb-faveo/js/index.js")}}"></script>
+    <script src="{{asset("lb-Faveo/js/index.js")}}"></script>
   @stop

@@ -8,7 +8,7 @@
 @stop
 
 @section('content')
-    <link href="{{asset('lb-faveo/dist/css/dataTables.bootstrap.css')}}" rel="stylesheet">
+    <link href="{{asset('lb-Faveo/dist/css/dataTables.bootstrap.css')}}" rel="stylesheet">
 <div class="box box-primary">
 <div class="box-header">
     <h2 class="box-title">{{Lang::get('lang.category')}}</h2></div>
@@ -61,5 +61,5 @@
     </div>
 
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
-    <script src="{{asset('lb-faveo/dist/js/category.js')}}"></script>
+    <script src="{{asset('lb-Faveo/dist/js/category.js')}}"></script>
 @stop

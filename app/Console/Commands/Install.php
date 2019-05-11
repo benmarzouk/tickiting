@@ -12,14 +12,14 @@ class Install extends Command
      *
      * @var string
      */
-    protected $signature = 'install:faveo';
+    protected $signature = 'install:Faveo';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'to install faveo';
+    protected $description = 'to install Faveo';
     protected $install;
 
     /**
@@ -52,7 +52,7 @@ class Install extends Command
                                           |_|                         
 ");
             $this->appEnv();
-            if ($this->confirm('Do you want to intall faveo?')) {
+            if ($this->confirm('Do you want to intall Faveo?')) {
                 $default = $this->choice(
                     'Which sql engine would you like to use?', ['mysql']
                 );

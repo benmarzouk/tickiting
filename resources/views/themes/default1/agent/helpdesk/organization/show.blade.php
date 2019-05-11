@@ -585,11 +585,11 @@ class="active"
 
         <!--<script type="text/javascript">-->
         <div id = "refresh">
-            <script src = "{{asset("lb-faveo/plugins/chartjs/Chart.min.js")}}" type = "text/javascript" ></script>
+            <script src = "{{asset("lb-Faveo/plugins/chartjs/Chart.min.js")}}" type = "text/javascript" ></script>
         </div>
-        <script src="{{asset("lb-faveo/plugins/chartjs/Chart.min.js")}}" type="text/javascript"></script>
+        <script src="{{asset("lb-Faveo/plugins/chartjs/Chart.min.js")}}" type="text/javascript"></script>
 
-        <link type="text/css" href="{{asset("lb-faveo/css/bootstrap-datetimepicker4.7.14.min.css")}}" rel="stylesheet">
+        <link type="text/css" href="{{asset("lb-Faveo/css/bootstrap-datetimepicker4.7.14.min.css")}}" rel="stylesheet">
         <script type="text/javascript">
                                 $(document).ready(function() {
                                     $.getJSON("../org-chart/<?php echo $orgs->id; ?>", function(result) {
@@ -853,8 +853,8 @@ class="active"
                                     });
                                 });
         </script>
-        <script src="{{asset("lb-faveo/js/bootstrap-datetimepicker4.7.14.min.js")}}" type="text/javascript"></script>
-        <script src="{{asset("lb-faveo/plugins/moment-develop/moment.js")}}" type="text/javascript"></script>
+        <script src="{{asset("lb-Faveo/js/bootstrap-datetimepicker4.7.14.min.js")}}" type="text/javascript"></script>
+        <script src="{{asset("lb-Faveo/plugins/moment-develop/moment.js")}}" type="text/javascript"></script>
 
     </div>
 </div>
@@ -877,7 +877,7 @@ class="active"
                     <div class="col-md-4">
                     </div>
                     <div class="col-md-6" id="assign_loader" style="display:none;">
-                        <img src="{{asset("lb-faveo/dist/img/gifloader.gif")}}"><br/><br/><br/>
+                        <img src="{{asset("lb-Faveo/dist/img/gifloader.gif")}}"><br/><br/><br/>
                     </div>
                 </div>
                 <div id="assign_body">

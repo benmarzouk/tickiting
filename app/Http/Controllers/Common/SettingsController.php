@@ -402,10 +402,10 @@ class SettingsController extends Controller
                 $config = $file.DIRECTORY_SEPARATOR.'config.php';
                 if (file_exists($seviceporvider) && file_exists($config)) {
                     /*
-                     * move to faveo config
+                     * move to Faveo config
                      */
-                    $faveoconfig = config_path().DIRECTORY_SEPARATOR.'plugins'.DIRECTORY_SEPARATOR.$filename.'.php';
-                    if ($faveoconfig) {
+                    $Faveoconfig = config_path().DIRECTORY_SEPARATOR.'plugins'.DIRECTORY_SEPARATOR.$filename.'.php';
+                    if ($Faveoconfig) {
                         $plug->create(['name' => $filename, 'path' => $filename, 'status' => 1]);
 
                         return redirect()->back()->with('success', Lang::get('lang.plugin-installed'));

@@ -2,45 +2,45 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>1Way | HELP DESK</title>
+        <title>1WAY | HELP DESK</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-        <!-- faveo favicon -->
-        <link href="{{asset("lb-faveo/media/images/favicon.ico")}}" rel="shortcut icon">
+        <!-- Faveo favicon -->
+        <link href="{{asset("lb-Faveo/media/images/favicon.ico")}}" rel="shortcut icon">
         <!-- Bootstrap 3.3.2 -->
-        <link href="{{asset("lb-faveo/css/bootstrap.min.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/css/bootstrap.min.css")}}" rel="stylesheet" type="text/css" />
         <!-- Font Awesome Icons -->
-        <link href="{{asset("lb-faveo/css/font-awesome.min.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/css/font-awesome.min.css")}}" rel="stylesheet" type="text/css" />
         <!-- Ionicons -->
-        <link href="{{asset("lb-faveo/css/ionicons.min.css")}}" rel="stylesheet" type="text/css" >
+        <link href="{{asset("lb-Faveo/css/ionicons.min.css")}}" rel="stylesheet" type="text/css" >
         <!-- Theme style -->
-        <link href="{{asset("lb-faveo/css/AdminLTE.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/css/AdminLTE.css")}}" rel="stylesheet" type="text/css" />
         <!-- AdminLTE Skins. Choose a skin from the css/skins folder instead of downloading all of them to reduce the load. -->
-        <link href="{{asset("lb-faveo/css/skins/_all-skins.min.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/css/skins/_all-skins.min.css")}}" rel="stylesheet" type="text/css" />
         <!-- iCheck -->
-        <link href="{{asset("lb-faveo/plugins/iCheck/flat/blue.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/plugins/iCheck/flat/blue.css")}}" rel="stylesheet" type="text/css" />
         <!-- This controlls the top tabs -->
-        <link href="{{asset("lb-faveo/css/tabby.css")}}" rel="stylesheet" type="text/css" >
+        <link href="{{asset("lb-Faveo/css/tabby.css")}}" rel="stylesheet" type="text/css" >
         <!-- In app notification style -->
         <link href="{{asset("css/notification-style.css")}}" rel="stylesheet" type="text/css">
 
-        <link href="{{asset("lb-faveo/css/jquerysctipttop.css")}}" rel="stylesheet" type="text/css">
+        <link href="{{asset("lb-Faveo/css/jquerysctipttop.css")}}" rel="stylesheet" type="text/css">
 
-        <link  href="{{asset("lb-faveo/css/editor.css")}}" rel="stylesheet" type="text/css">
+        <link  href="{{asset("lb-Faveo/css/editor.css")}}" rel="stylesheet" type="text/css">
 
-        <link href="{{asset("lb-faveo/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css")}}" rel="stylesheet" type="text/css" />
 
-        <link href="{{asset("lb-faveo/plugins/datatables/dataTables.bootstrap.css")}}" rel="stylesheet" type="text/css" >
+        <link href="{{asset("lb-Faveo/plugins/datatables/dataTables.bootstrap.css")}}" rel="stylesheet" type="text/css" >
         <!-- select2 -->
-        <link href="{{asset("lb-faveo/plugins/select2/select2.min.css")}}" rel="stylesheet" type="text/css">
+        <link href="{{asset("lb-Faveo/plugins/select2/select2.min.css")}}" rel="stylesheet" type="text/css">
         <!-- Colorpicker -->
 
-        <link href="{{asset("lb-faveo/plugins/colorpicker/bootstrap-colorpicker.min.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/plugins/colorpicker/bootstrap-colorpicker.min.css")}}" rel="stylesheet" type="text/css" />
 
-        <script src="{{asset("lb-faveo/plugins/filebrowser/plugin.js")}}" type="text/javascript"></script>
+        <script src="{{asset("lb-Faveo/plugins/filebrowser/plugin.js")}}" type="text/javascript"></script>
 
-        <script src="{{asset("lb-faveo/js/jquery-2.1.4.js")}}" type="text/javascript"></script>
+        <script src="{{asset("lb-Faveo/js/jquery-2.1.4.js")}}" type="text/javascript"></script>
 
-        <script src="{{asset("lb-faveo/js/jquery2.1.1.min.js")}}" type="text/javascript"></script>
+        <script src="{{asset("lb-Faveo/js/jquery2.1.1.min.js")}}" type="text/javascript"></script>
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -67,7 +67,7 @@
         ?>
         <div class="wrapper">
             <header class="main-header">
-                <a href="http://www.faveohelpdesk.com" class="logo"><img src="{{ asset('lb-faveo/media/images/logo.png') }}" width="100px"></a>
+                <a href="http://www.Faveohelpdesk.com" class="logo"><img src="{{ asset('lb-Faveo/media/images/logo.png') }}" width="100px"></a>
                 <!-- Header Navbar: style can be found in header.less -->
                 <nav class="navbar navbar-static-top" role="navigation">
                     <!-- Sidebar toggle button-->
@@ -83,7 +83,7 @@
 
                         <ul class="nav navbar-nav navbar-left">
                             @if($replacetop==0)
-                            <li @yield('settings')><a href="{!! url('dashboard') !!}">{!! Lang::get('lang.agent_panel') !!}</a></li>
+                            <li @yield('settings')><a href="{!! url(' Tableau_De_Bord') !!}">{!! Lang::get('lang.agent_panel') !!}</a></li>
                             @else
                             <?php \Event::fire('service.desk.admin.topbar', array()); ?>
                             @endif
@@ -150,7 +150,7 @@
                                     </ul>
                             </li>
                             <li class="footer no-border"><div class="col-md-5"></div><div class="col-md-2">
-                                    <img src="{{asset("lb-faveo/media/images/gifloader.gif")}}" style="display: none;" id="notification-loader">
+                                    <img src="{{asset("lb-Faveo/media/images/gifloader.gif")}}" style="display: none;" id="notification-loader">
                                 </div><div class="col-md-5"></div></li>
                             <li class="footer"><a href="{{ url('notifications-list')}}">View all</a>
                             </li>
@@ -158,11 +158,11 @@
                         </li>
                         <li class="dropdown">
                             <?php $src = Lang::getLocale().'.png'; ?>
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><img src="{{asset("lb-faveo/flags/$src")}}"></img> &nbsp;<span class="caret"></span></a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><img src="{{asset("lb-Faveo/flags/$src")}}"></img> &nbsp;<span class="caret"></span></a>
                             <ul class="dropdown-menu" role="menu">
                                 @foreach($langs as $key => $value)
                                             <?php $src = $key.".png"; ?>
-                                            <li><a href="#" id="{{$key}}" onclick="changeLang(this.id)"><img src="{{asset("lb-faveo/flags/$src")}}"></img>&nbsp;{{$value[0]}}&nbsp;
+                                            <li><a href="#" id="{{$key}}" onclick="changeLang(this.id)"><img src="{{asset("lb-Faveo/flags/$src")}}"></img>&nbsp;{{$value[0]}}&nbsp;
                                             @if(Lang::getLocale() == "ar")
                                             &rlm;
                                             @endif
@@ -284,6 +284,7 @@
                             </ul>
                         </li>
                         <li class="treeview @yield('Tickets')">
+
                             <a  href="#">
                                 <i class="fa fa-ticket"></i> <span>{!! Lang::get('lang.tickets') !!}</span> <i class="fa fa-angle-left pull-right"></i>
                             </a>
@@ -406,37 +407,37 @@
                 <?php
                 $company = App\Model\helpdesk\Settings\Company::where('id', '=', '1')->first();
                 ?>
-                <strong>{!! Lang::get('lang.copyright') !!} &copy; {!! date('Y') !!}  <a href="{!! $company->website !!}" target="_blank">{!! $company->company_name !!}</a>.</strong> {!! Lang::get('lang.all_rights_reserved') !!}. {!! Lang::get('lang.powered_by') !!} <a href="http://www.faveohelpdesk.com/" target="_blank">Faveo</a>
+                <strong>{!! Lang::get('lang.copyright') !!} &copy; {!! date('Y') !!}  <a href="{!! $company->website !!}" target="_blank">{!! $company->company_name !!}</a>.</strong> {!! Lang::get('lang.all_rights_reserved') !!}. {!! Lang::get('lang.powered_by') !!} <a href="http://www.Faveohelpdesk.com/" target="_blank">1WAY</a>
             </footer>
         </div><!-- ./wrapper -->
         <!-- jQuery 2.1.3 -->
-        <script src="{{asset("lb-faveo/js/ajax-jquery.min.js")}}" type="text/javascript"></script>
+        <script src="{{asset("lb-Faveo/js/ajax-jquery.min.js")}}" type="text/javascript"></script>
         <!-- Bootstrap 3.3.2 JS -->
-        <script src="{{asset("lb-faveo/js/bootstrap.min.js")}}" type="text/javascript"></script>
+        <script src="{{asset("lb-Faveo/js/bootstrap.min.js")}}" type="text/javascript"></script>
         <!-- Slimscroll -->
-        <script src="{{asset("lb-faveo/plugins/slimScroll/jquery.slimscroll.min.js")}}" type="text/javascript"></script>
+        <script src="{{asset("lb-Faveo/plugins/slimScroll/jquery.slimscroll.min.js")}}" type="text/javascript"></script>
         <!-- FastClick -->
-        <script src="{{asset("lb-faveo/plugins/fastclick/fastclick.min.js")}}" type="text/javascript"></script>
+        <script src="{{asset("lb-Faveo/plugins/fastclick/fastclick.min.js")}}" type="text/javascript"></script>
         <!-- AdminLTE App -->
-        <script src="{{asset("lb-faveo/js/app.min.js")}}" type="text/javascript"></script>
+        <script src="{{asset("lb-Faveo/js/app.min.js")}}" type="text/javascript"></script>
         <!-- iCheck -->
-        <script src="{{asset("lb-faveo/plugins/iCheck/icheck.min.js")}}" type="text/javascript"></script>
+        <script src="{{asset("lb-Faveo/plugins/iCheck/icheck.min.js")}}" type="text/javascript"></script>
 
-        <script src="{{asset("lb-faveo/plugins/datatables/dataTables.bootstrap.js")}}" type="text/javascript"></script>
+        <script src="{{asset("lb-Faveo/plugins/datatables/dataTables.bootstrap.js")}}" type="text/javascript"></script>
 
-        <script src="{{asset("lb-faveo/plugins/datatables/jquery.dataTables.js")}}" type="text/javascript"></script>
+        <script src="{{asset("lb-Faveo/plugins/datatables/jquery.dataTables.js")}}" type="text/javascript"></script>
         <!-- Page Script -->
-        <script src="{{asset("lb-faveo/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js")}}" type="text/javascript"></script>
+        <script src="{{asset("lb-Faveo/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js")}}" type="text/javascript"></script>
 
-        <script src="{{asset("lb-faveo/js/jquery.dataTables1.10.10.min.js")}}"  type="text/javascript"></script>
+        <script src="{{asset("lb-Faveo/js/jquery.dataTables1.10.10.min.js")}}"  type="text/javascript"></script>
 
-        <script src="{{asset("lb-faveo/plugins/datatables/dataTables.bootstrap.js")}}"  type="text/javascript"></script>
+        <script src="{{asset("lb-Faveo/plugins/datatables/dataTables.bootstrap.js")}}"  type="text/javascript"></script>
         <!-- Colorpicker -->
-        <script src="{{asset("lb-faveo/plugins/colorpicker/bootstrap-colorpicker.min.js")}}" ></script>
+        <script src="{{asset("lb-Faveo/plugins/colorpicker/bootstrap-colorpicker.min.js")}}" ></script>
         <!--date time picker-->
-        <script src="{{asset("lb-faveo/js/bootstrap-datetimepicker4.7.14.min.js")}}" type="text/javascript"></script>
+        <script src="{{asset("lb-Faveo/js/bootstrap-datetimepicker4.7.14.min.js")}}" type="text/javascript"></script>
         <!-- select2 -->
-         <script src="{{asset("lb-faveo/plugins/select2/select2.min.js")}}" ></script>
+         <script src="{{asset("lb-Faveo/plugins/select2/select2.min.js")}}" ></script>
 
 @if (trim($__env->yieldContent('no-toolbar')))
     <h1>@yield('no-toolbar')</h1>
@@ -474,12 +475,13 @@
                     });
         });</script>
 
-    <script src="{{asset("lb-faveo/js/tabby.js")}}"></script>
+    <script src="{{asset("lb-Faveo/js/tabby.js")}}"></script>
     <!-- CK Editor -->
-    <script src="{{asset("lb-faveo/plugins/filebrowser/plugin.js")}}"></script>
-    <script src="{{asset("lb-faveo/js/languagechanger.js")}}" type="text/javascript"></script>
+    <script src="{{asset("lb-Faveo/plugins/filebrowser/plugin.js")}}"></script>
+    <script src="{{asset("lb-Faveo/js/languagechanger.js")}}" type="text/javascript"></script>
     @yield('FooterInclude')
 </body>
+
 <script>
     $(function() {
 

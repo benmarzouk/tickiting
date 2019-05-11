@@ -1,5 +1,5 @@
 @extends('themes.default1.admin.layout.admin')
-<link href="{{asset("lb-faveo/css/faveo-css.css")}}" rel="stylesheet" type="text/css" />
+<link href="{{asset("lb-Faveo/css/Faveo-css.css")}}" rel="stylesheet" type="text/css" />
 @section('Settings')
 active
 @stop

@@ -363,9 +363,9 @@ jQuery(document).ready(function($) {
     $('#close').on('click', function (e) {
         $.ajax({
             type        :   "GET",
-            url         :   "http://localhost/faveo/public/ticket/close/{{$tickets->id}}",
+            url         :   "http://localhost/Faveo/public/ticket/close/{{$tickets->id}}",
             success : function(response) {
-                    $( "#refresh" ).load( "http://localhost/faveo/public/thread/{{$tickets->id}}   #refresh");
+                    $( "#refresh" ).load( "http://localhost/Faveo/public/thread/{{$tickets->id}}   #refresh");
             }
         })
         return false;
@@ -374,9 +374,9 @@ jQuery(document).ready(function($) {
     $('#resolved').on('click', function (e) {
         $.ajax({
             type        :   "GET",
-            url         :   "http://localhost/faveo/public/ticket/resolve/{{$tickets->id}}",
+            url         :   "http://localhost/Faveo/public/ticket/resolve/{{$tickets->id}}",
             success : function(response) {
-                    $( "#refresh" ).load( "http://localhost/faveo/public/thread/{{$tickets->id}}  #refresh");
+                    $( "#refresh" ).load( "http://localhost/Faveo/public/thread/{{$tickets->id}}  #refresh");
             }
         })
         return false;
@@ -385,9 +385,9 @@ jQuery(document).ready(function($) {
     $('#open').on('click', function (e) {
         $.ajax({
             type        :   "GET",
-            url         :   "http://localhost/faveo/public/ticket/open/{{$tickets->id}}",
+            url         :   "http://localhost/Faveo/public/ticket/open/{{$tickets->id}}",
             success : function(response) {
-                    $( "#refresh" ).load( "http://localhost/faveo/public/thread/{{$tickets->id}}   #refresh");
+                    $( "#refresh" ).load( "http://localhost/Faveo/public/thread/{{$tickets->id}}   #refresh");
                 $('#refresh').load('thread/2 #refresh');
             }
         })

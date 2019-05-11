@@ -43,7 +43,7 @@ class ApiController extends Controller
     public $thread;
     public $attach;
     public $ticketRequest;
-    public $faveoUser;
+    public $FaveoUser;
     public $team;
     public $setting;
     public $helptopic;
@@ -84,11 +84,11 @@ class ApiController extends Controller
         $ticketRequest = new TicketRequest();
         $this->ticketRequest = $ticketRequest;
 
-        $faveoUser = new User();
-        $this->faveoUser = $faveoUser;
+        $FaveoUser = new User();
+        $this->FaveoUser = $FaveoUser;
 
-        $faveoUser = new User();
-        $this->user = $faveoUser;
+        $FaveoUser = new User();
+        $this->user = $FaveoUser;
 
         $team = new Teams();
         $this->team = $team;
@@ -447,7 +447,7 @@ class ApiController extends Controller
     public function getAgents()
     {
         try {
-            $result = $this->faveoUser->where('role', 'agent')->orWhere('role', 'admin')->where('active', 1)->get();
+            $result = $this->FaveoUser->where('role', 'agent')->orWhere('role', 'admin')->where('active', 1)->get();
 
             return response()->json(compact('result'));
         } catch (Exception $e) {
@@ -543,7 +543,7 @@ class ApiController extends Controller
                 return response()->json(compact('error'));
             }
             $search = $this->request->input('search');
-            $result = $this->faveoUser->where('first_name', 'like', '%'.$search.'%')->orWhere('last_name', 'like', '%'.$search.'%')->orWhere('user_name', 'like', '%'.$search.'%')->orWhere('email', 'like', '%'.$search.'%')->get();
+            $result = $this->FaveoUser->where('first_name', 'like', '%'.$search.'%')->orWhere('last_name', 'like', '%'.$search.'%')->orWhere('user_name', 'like', '%'.$search.'%')->orWhere('email', 'like', '%'.$search.'%')->get();
 
             return response()->json(compact('result'))
                             ->header('X-Header-One', 'Header Value');
@@ -610,7 +610,7 @@ class ApiController extends Controller
                 return response()->json(compact('error'));
             }
             $id = $this->request->input('user_id');
-            $result = $this->faveoUser->where('id', $id)->where('role', 'user')->first();
+            $result = $this->FaveoUser->where('id', $id)->where('role', 'user')->first();
 
             return response()->json(compact('result'));
         } catch (Exception $e) {

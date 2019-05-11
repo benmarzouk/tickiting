@@ -5,15 +5,15 @@
     <title>SUPPORT CENTER</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     
-    <link rel="shortcut icon" href="{{asset("lb-faveo/media/images/favicon.ico")}}">
+    <link rel="shortcut icon" href="{{asset("lb-Faveo/media/images/favicon.ico")}}">
     
-    <link href="{{asset("lb-faveo/css/bootstrap.min.css")}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset("lb-Faveo/css/bootstrap.min.css")}}" rel="stylesheet" type="text/css" />
     
-    <link href="{{asset("lb-faveo/css/font-awesome.min.css")}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset("lb-Faveo/css/font-awesome.min.css")}}" rel="stylesheet" type="text/css" />
     <!-- Theme style -->
-    <link href="{{asset("lb-faveo/css/AdminLTE.min.css")}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset("lb-Faveo/css/AdminLTE.min.css")}}" rel="stylesheet" type="text/css" />
     <!-- iCheck -->
-    <link href="{{asset("lb-faveo/plugins/iCheck/square/blue.css")}}" rel="stylesheet" type="text/css" />
+    <link href="{{asset("lb-Faveo/plugins/iCheck/square/blue.css")}}" rel="stylesheet" type="text/css" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -49,15 +49,15 @@
     </div><!-- /.login-box -->
     <div class="login-box-msg">
     </br>
-      <p class="text-muted">{!! Lang::get('lang.copyright') !!} &copy; {!! date('Y') !!}  <a href="{!! $company->website !!}">{!! $company->company_name !!}</a>. {!! Lang::get('lang.all_rights_reserved') !!}. {!! Lang::get('lang.powered_by') !!} <a href="http://www.faveohelpdesk.com/"  target="_blank">Faveo</a></p>
+      <p class="text-muted">{!! Lang::get('lang.copyright') !!} &copy; {!! date('Y') !!}  <a href="{!! $company->website !!}">{!! $company->company_name !!}</a>. {!! Lang::get('lang.all_rights_reserved') !!}. {!! Lang::get('lang.powered_by') !!} <a href="http://www.Faveohelpdesk.com/"  target="_blank">Faveo</a></p>
     </div>
     </div>
 
-    <script src="{{asset("lb-faveo/js/ajax-jquery.min.js")}}" type="text/javascript"></script>
+    <script src="{{asset("lb-Faveo/js/ajax-jquery.min.js")}}" type="text/javascript"></script>
 
-    <script src="{{asset("lb-faveo/js/bootstrap.min.js")}}" type="text/javascript"></script>
+    <script src="{{asset("lb-Faveo/js/bootstrap.min.js")}}" type="text/javascript"></script>
     <!-- iCheck -->
-    <script src="{{asset("lb-faveo/plugins/iCheck/icheck.min.js")}}" type="text/javascript"></script>
+    <script src="{{asset("lb-Faveo/plugins/iCheck/icheck.min.js")}}" type="text/javascript"></script>
 
     <script>
         $(function () {

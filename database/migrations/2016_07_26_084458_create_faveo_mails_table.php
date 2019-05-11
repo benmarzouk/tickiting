@@ -12,7 +12,7 @@ class CreateFaveoMailsTable extends Migration
      */
     public function up()
     {
-        Schema::create('faveo_mails', function (Blueprint $table) {
+        Schema::create('Faveo_mails', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('email_id');
             $table->string('drive');
@@ -29,6 +29,6 @@ class CreateFaveoMailsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('faveo_mails');
+        Schema::drop('Faveo_mails');
     }
 }

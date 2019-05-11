@@ -6,7 +6,7 @@
 Installation instructions:
 --------------------------
 
-Faveo HELPDESK installation should not take more than 15 minutes to complete.
+1WAY HELPDESK installation should not take more than 15 minutes to complete.
 Details are provided in this article:
 
 http://ladybirdweb.com/support/knowledgebase
@@ -14,7 +14,7 @@ http://ladybirdweb.com/support/knowledgebase
 Upgrade instructions:
 ---------------------
 
-If you are upgrading your Faveo HELPDESK to the latest stable release, please
+If you are upgrading your 1WAY HELPDESK to the latest stable release, please
 follow the instructions provided in this article:
 
 http://ladybirdweb.com/support/knowledgebase

@@ -1,14 +1,14 @@
 @extends('themes.default1.agent.layout.agent')
 
-@section('Dashboard')
+@section(' Tableau_De_Bord')
 class="active"
 @stop
 
-@section('dashboard-bar')
+@section(' Tableau_De_Bord-bar')
 active
 @stop
 
-@section('dashboard')
+@section(' Tableau_De_Bord')
 class="active"
 @stop
 
@@ -33,7 +33,7 @@ class="active"
             <hr/>
             
    
-   <script src="{{asset("lb-faveo/plugins/chartjs/Chart.min.js")}}" type="text/javascript"></script>
+   <script src="{{asset("lb-Faveo/plugins/chartjs/Chart.min.js")}}" type="text/javascript"></script>
          <script type="text/javascript">
     $(function(){
     $.getJSON("reportdata", function (result) {

@@ -60,11 +60,11 @@ CREATE TABLE IF NOT EXISTS `failed_jobs` (
 -- --------------------------------------------------------
 
 -- 
--- Table structure for table `faveo_mails`
+-- Table structure for table `Faveo_mails`
 -- 
 
-DROP TABLE IF EXISTS `faveo_mails`;
-CREATE TABLE IF NOT EXISTS `faveo_mails` (
+DROP TABLE IF EXISTS `Faveo_mails`;
+CREATE TABLE IF NOT EXISTS `Faveo_mails` (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `email_id` int(11) NOT NULL,
   `drive` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
@@ -78,11 +78,11 @@ CREATE TABLE IF NOT EXISTS `faveo_mails` (
 -- --------------------------------------------------------
 
 -- 
--- Table structure for table `faveo_queues`
+-- Table structure for table `Faveo_queues`
 -- 
 
-DROP TABLE IF EXISTS `faveo_queues`;
-CREATE TABLE IF NOT EXISTS `faveo_queues` (
+DROP TABLE IF EXISTS `Faveo_queues`;
+CREATE TABLE IF NOT EXISTS `Faveo_queues` (
   `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT,
   `service_id` int(11) NOT NULL,
   `key` varchar(255) COLLATE utf8_unicode_ci NOT NULL,

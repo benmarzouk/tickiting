@@ -141,7 +141,7 @@ active
 </div>
 <script src="//code.jquery.com/jquery-1.10.2.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
-<script src="{{asset("lb-faveo/js/angular2.js")}}" type="text/javascript"></script>
+<script src="{{asset("lb-Faveo/js/angular2.js")}}" type="text/javascript"></script>
 <script type="text/javascript">
     function CheckPortForInput(e) {
         var code = e.which || e.keyCode;

@@ -4,7 +4,7 @@
         <title>Faveo HELPDESK | Insatller</title>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- bootstrap 3.0.2 -->
-        <link href="{{asset("lb-faveo/downloads/bootstrap.min.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/downloads/bootstrap.min.css")}}" rel="stylesheet" type="text/css" />
         {{-- {{ HTML::style('ep-content/themes/ep-admin/default1/css/bootstrap.min.css'); }} --}}
 
         <!-- font Awesome -->
@@ -12,11 +12,11 @@
         {{-- {{ HTML::style('ep-content/themes/ep-admin/default1/css/font-awesome.min.css'); }} --}}
 
         <!-- Ionicons -->
-        <link href="{{asset("lb-faveo/downloads/ionicons.min.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/downloads/ionicons.min.css")}}" rel="stylesheet" type="text/css" />
         {{-- {{ HTML::style('ep-content/themes/ep-admin/default1/admin/css/ionicons.min.css'); }} --}}
 
         <!-- Theme style -->
-        <link href="{{asset("lb-faveo/dist/css/AdminLTE.min.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/dist/css/AdminLTE.min.css")}}" rel="stylesheet" type="text/css" />
         {{-- {{ HTML::style('ep-content/themes/ep-admin/default1/admin/css/AdminLTE.css'); }} --}}
 
         <!-- Bootstrap time Picker -->
@@ -110,7 +110,7 @@ a:active  {color:#000;}
 <body style="background-color:#d2d6de;">
 <div class="login-box">
     @yield('content')
-    <p id="footer">&copy;<?php echo date('Y')?>. Powered by <a href="http://www.faveohelpdesk.com">Faveo </a></p>
+    <p id="footer">&copy;<?php echo date('Y')?>. Powered by <a href="http://www.Faveohelpdesk.com">Faveo </a></p>
 </div>
 </body>
 </html>

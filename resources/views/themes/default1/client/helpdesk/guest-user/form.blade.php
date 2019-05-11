@@ -44,7 +44,7 @@
 
 <!-- open a form -->
 {{-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script> --}}
-<script src="{{asset("lb-faveo/dist/js/jquery2.0.2.min.js")}}" type="text/javascript"></script>
+<script src="{{asset("lb-Faveo/dist/js/jquery2.0.2.min.js")}}" type="text/javascript"></script>
 
 <!--
 |====================================================

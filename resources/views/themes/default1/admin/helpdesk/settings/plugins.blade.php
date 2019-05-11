@@ -57,7 +57,7 @@ class="active"
         <div class="alert alert-info alert-dismissable">
             <i class="fa fa-info-circle"></i>
             <b>{!! Lang::get('lang.plugin-info') !!}</b><br/>
-            <a href="http://www.faveohelpdesk.com/plugins/" target="_blank">{!!Lang::get('lang.click-here')!!}</a>&nbsp;{!!Lang::get('lang.plugin-info-pro')!!}
+            <a href="http://www.Faveohelpdesk.com/plugins/" target="_blank">{!!Lang::get('lang.click-here')!!}</a>&nbsp;{!!Lang::get('lang.plugin-info-pro')!!}
         </div>
         @if (count($errors) > 0)
         <div class="alert alert-danger alert-dismissable">
@@ -88,9 +88,9 @@ class="active"
         @endif
         <div class="row">
             <div class="col-md-12">
-                <script src="{{asset('lb-faveo/plugins/jQuery/jQuery-2.1.4.min.js')}}" type="text/javascript"></script>
-                <script type="text/javascript" src="{{asset('lb-faveo/plugins/datatables/jquery.dataTables.js')}}"></script>
-                <script type="text/javascript" src="{{asset('lb-faveo/plugins/datatables/dataTables.bootstrap.js')}}"></script>
+                <script src="{{asset('lb-Faveo/plugins/jQuery/jQuery-2.1.4.min.js')}}" type="text/javascript"></script>
+                <script type="text/javascript" src="{{asset('lb-Faveo/plugins/datatables/jquery.dataTables.js')}}"></script>
+                <script type="text/javascript" src="{{asset('lb-Faveo/plugins/datatables/dataTables.bootstrap.js')}}"></script>
 
                 {!! Datatable::table()
                 ->addColumn('Name','Description','Author','Website','Version')       // these are the column headings to be shown

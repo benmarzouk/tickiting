@@ -1,12 +1,12 @@
 <?php
 
-Breadcrumbs::register('dashboard', function ($breadcrumbs) {
+Breadcrumbs::register(' Tableau_De_Bord', function ($breadcrumbs) {
     //$breadcrumbs->parent('/');
-    $breadcrumbs->push(Lang::get('lang.dashboard'), route('dashboard'));
+    $breadcrumbs->push(Lang::get('lang. Tableau_De_Bord'), route(' Tableau_De_Bord'));
 });
 
 Breadcrumbs::register('notification.list', function ($breadcrumbs) {
-    $breadcrumbs->parent('dashboard');
+    $breadcrumbs->parent(' Tableau_De_Bord');
     $breadcrumbs->push('All Notifications', route('notification.list'));
 });
 
@@ -247,7 +247,7 @@ Breadcrumbs::register('rating.edit', function ($breadcrumbs) {
 });
 
 Breadcrumbs::register('admin-profile', function ($breadcrumbs) {
-    $breadcrumbs->parent('dashboard');
+    $breadcrumbs->parent(' Tableau_De_Bord');
     $breadcrumbs->push(Lang::get('lang.profile'), route('admin-profile'));
 });
 
@@ -303,11 +303,11 @@ Breadcrumbs::register('err.debug.settings', function ($breadcrumbs) {
 });
 
 Breadcrumbs::register('closed.approvel.ticket', function ($breadcrumbs) {
-    $breadcrumbs->parent('dashboard');
+    $breadcrumbs->parent(' Tableau_De_Bord');
     $breadcrumbs->push(Lang::get('lang.approvel_ticket_list'), route('closed.approvel.ticket'));
 });
 Breadcrumbs::register('user.index', function ($breadcrumbs) {
-    $breadcrumbs->parent('dashboard');
+    $breadcrumbs->parent(' Tableau_De_Bord');
     $breadcrumbs->push(Lang::get('lang.user_directory'), route('user.index'));
 });
 Breadcrumbs::register('user.create', function ($breadcrumbs) {
@@ -329,7 +329,7 @@ Breadcrumbs::register('user.export', function ($breadcrumbs) {
 });
 
 Breadcrumbs::register('organizations.index', function ($breadcrumbs) {
-    $breadcrumbs->parent('dashboard');
+    $breadcrumbs->parent(' Tableau_De_Bord');
     $breadcrumbs->push(Lang::get('lang.organizations'), route('organizations.index'));
 });
 Breadcrumbs::register('organizations.create', function ($breadcrumbs) {
@@ -345,7 +345,7 @@ Breadcrumbs::register('organizations.show', function ($breadcrumbs) {
     $breadcrumbs->push(Lang::get('lang.view_organization_profile'), url('organizations/{organizations}'));
 });
 Breadcrumbs::register('canned.list', function ($breadcrumbs) {
-    $breadcrumbs->parent('dashboard');
+    $breadcrumbs->parent(' Tableau_De_Bord');
     $breadcrumbs->push(Lang::get('lang.canned_response'), route('canned.list'));
 });
 Breadcrumbs::register('canned.create', function ($breadcrumbs) {
@@ -359,7 +359,7 @@ Breadcrumbs::register('canned.edit', function ($breadcrumbs) {
 });
 
 Breadcrumbs::register('profile', function ($breadcrumbs) {
-    $breadcrumbs->parent('dashboard');
+    $breadcrumbs->parent(' Tableau_De_Bord');
     $breadcrumbs->push(Lang::get('lang.my_profile'), route('profile'));
 });
 Breadcrumbs::register('agent-profile-edit', function ($breadcrumbs) {
@@ -367,63 +367,63 @@ Breadcrumbs::register('agent-profile-edit', function ($breadcrumbs) {
     $breadcrumbs->push(Lang::get('lang.edit'), url('profile-edit'));
 });
 Breadcrumbs::register('inbox.ticket', function ($breadcrumbs) {
-    $breadcrumbs->parent('dashboard');
+    $breadcrumbs->parent(' Tableau_De_Bord');
     $breadcrumbs->push(Lang::get('lang.tickets').'&nbsp; > &nbsp;'.Lang::get('lang.inbox'), route('inbox.ticket'));
 });
 Breadcrumbs::register('open.ticket', function ($breadcrumbs) {
-    $breadcrumbs->parent('dashboard');
+    $breadcrumbs->parent(' Tableau_De_Bord');
     $breadcrumbs->push(Lang::get('lang.tickets').'&nbsp; > &nbsp;'.Lang::get('lang.open'), route('open.ticket'));
 });
 Breadcrumbs::register('answered.ticket', function ($breadcrumbs) {
-    $breadcrumbs->parent('dashboard');
+    $breadcrumbs->parent(' Tableau_De_Bord');
     $breadcrumbs->push(Lang::get('lang.tickets').'&nbsp; > &nbsp;'.Lang::get('lang.answered'), route('answered.ticket'));
 });
 Breadcrumbs::register('myticket.ticket', function ($breadcrumbs) {
-    $breadcrumbs->parent('dashboard');
+    $breadcrumbs->parent(' Tableau_De_Bord');
     $breadcrumbs->push(Lang::get('lang.tickets').'&nbsp; > &nbsp;'.Lang::get('lang.my_tickets'), route('myticket.ticket'));
 });
 Breadcrumbs::register('overdue.ticket', function ($breadcrumbs) {
-    $breadcrumbs->parent('dashboard');
+    $breadcrumbs->parent(' Tableau_De_Bord');
     $breadcrumbs->push(Lang::get('lang.tickets').'&nbsp; > &nbsp;'.Lang::get('lang.overdue'), route('overdue.ticket'));
 });
 Breadcrumbs::register('closed.ticket', function ($breadcrumbs) {
-    $breadcrumbs->parent('dashboard');
+    $breadcrumbs->parent(' Tableau_De_Bord');
     $breadcrumbs->push(Lang::get('lang.tickets').'&nbsp; > &nbsp;'.Lang::get('lang.closed'), route('closed.ticket'));
 });
 Breadcrumbs::register('assigned.ticket', function ($breadcrumbs) {
-    $breadcrumbs->parent('dashboard');
+    $breadcrumbs->parent(' Tableau_De_Bord');
     $breadcrumbs->push(Lang::get('lang.tickets').'&nbsp; > &nbsp;'.Lang::get('lang.assigned'), route('assigned.ticket'));
 });
 Breadcrumbs::register('newticket', function ($breadcrumbs) {
-    $breadcrumbs->parent('dashboard');
+    $breadcrumbs->parent(' Tableau_De_Bord');
 
     $breadcrumbs->push(Lang::get('lang.tickets').'&nbsp; > &nbsp;'.Lang::get('lang.create'), route('newticket'));
 });
 Breadcrumbs::register('ticket.thread', function ($breadcrumbs, $id) {
-    $breadcrumbs->parent('dashboard');
+    $breadcrumbs->parent(' Tableau_De_Bord');
     $ticket_number = App\Model\helpdesk\Ticket\Tickets::where('id', '=', $id)->first();
     $breadcrumbs->push(Lang::get('lang.tickets').'&nbsp; > &nbsp;'.$ticket_number->ticket_number, url('/thread/{id}'));
 });
 Breadcrumbs::register('get-trash', function ($breadcrumbs) {
-    $breadcrumbs->parent('dashboard');
+    $breadcrumbs->parent(' Tableau_De_Bord');
     $breadcrumbs->push(Lang::get('lang.tickets').'&nbsp; > &nbsp;'.Lang::get('lang.trash'), route('get-trash'));
 });
 Breadcrumbs::register('unassigned', function ($breadcrumbs) {
-    $breadcrumbs->parent('dashboard');
+    $breadcrumbs->parent(' Tableau_De_Bord');
     $breadcrumbs->push(Lang::get('lang.tickets').'&nbsp; > &nbsp;'.Lang::get('lang.unassigned'), route('unassigned'));
 });
 
 Breadcrumbs::register('dept.open.ticket', function ($breadcrumbs, $dept) {
-    $breadcrumbs->parent('dashboard');
+    $breadcrumbs->parent(' Tableau_De_Bord');
     $breadcrumbs->push(Lang::get('lang.department').'&nbsp; > &nbsp;'.$dept.'&nbsp; > &nbsp;'.Lang::get('lang.open_tickets'), url('/{dept}/open'));
 });
 Breadcrumbs::register('dept.closed.ticket', function ($breadcrumbs, $dept) {
-    $breadcrumbs->parent('dashboard');
+    $breadcrumbs->parent(' Tableau_De_Bord');
     $breadcrumbs->push(Lang::get('lang.department').'&nbsp; > &nbsp;'.$dept.'&nbsp; > &nbsp;'.Lang::get('lang.closed_tickets'), url('/{dept}/closed'));
 });
 Breadcrumbs::register('report.index', function ($breadcrumbs) {
-    $breadcrumbs->parent('dashboard');
-    $breadcrumbs->push(Lang::get('lang.dashboard'), route('dashboard'));
+    $breadcrumbs->parent(' Tableau_De_Bord');
+    $breadcrumbs->push(Lang::get('lang. Tableau_De_Bord'), route(' Tableau_De_Bord'));
 });
 Breadcrumbs::register('home', function ($breadcrumbs) {
     $breadcrumbs->push(Lang::get('lang.home'), route('home'));
@@ -471,7 +471,7 @@ Breadcrumbs::register('board.offline', function ($breadcrumbs) {
     $breadcrumbs->push('Board Offline');
 });
 Breadcrumbs::register('category.index', function ($breadcrumbs) {
-    $breadcrumbs->parent('dashboard');
+    $breadcrumbs->parent(' Tableau_De_Bord');
     $breadcrumbs->push(Lang::get('lang.category'), route('category.index'));
 });
 Breadcrumbs::register('category.create', function ($breadcrumbs) {
@@ -488,7 +488,7 @@ Breadcrumbs::register('category.show', function ($breadcrumbs) {
 });
 
 Breadcrumbs::register('article.index', function ($breadcrumbs) {
-    $breadcrumbs->parent('dashboard');
+    $breadcrumbs->parent(' Tableau_De_Bord');
     $breadcrumbs->push(Lang::get('lang.article'), route('article.index'));
 });
 Breadcrumbs::register('article.create', function ($breadcrumbs) {
@@ -505,15 +505,15 @@ Breadcrumbs::register('article.show', function ($breadcrumbs) {
 });
 
 Breadcrumbs::register('settings', function ($breadcrumbs) {
-    $breadcrumbs->parent('dashboard');
+    $breadcrumbs->parent(' Tableau_De_Bord');
     $breadcrumbs->push(Lang::get('lang.settings'), route('settings'));
 });
 Breadcrumbs::register('comment', function ($breadcrumbs) {
-    $breadcrumbs->parent('dashboard');
+    $breadcrumbs->parent(' Tableau_De_Bord');
     $breadcrumbs->push(Lang::get('lang.comments'), route('comment'));
 });
 Breadcrumbs::register('page.index', function ($breadcrumbs) {
-    $breadcrumbs->parent('dashboard');
+    $breadcrumbs->parent(' Tableau_De_Bord');
     $breadcrumbs->push(Lang::get('lang.pages'), route('page.index'));
 });
 Breadcrumbs::register('page.create', function ($breadcrumbs) {
@@ -595,7 +595,7 @@ Breadcrumbs::register('priority.edit', function ($breadcrumbs) {
 });
 
 Breadcrumbs::register('dept.inprogress.ticket', function ($breadcrumbs, $dept) {
-    $breadcrumbs->parent('dashboard');
+    $breadcrumbs->parent(' Tableau_De_Bord');
     $breadcrumbs->push(Lang::get('lang.department').'&nbsp; > &nbsp;'.$dept.'&nbsp; > &nbsp;'.Lang::get('lang.assigned_tickets'), url('/{dept}/inprogress'));
 });
 

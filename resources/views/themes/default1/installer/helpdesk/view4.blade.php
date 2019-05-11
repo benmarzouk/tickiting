@@ -133,7 +133,7 @@ if (DB_HOST && DB_USER && DB_NAME) {
             <p id="pass">Database connection successful. This system can run Faveo</p>
         </div>
 
-        <script src="{{asset("lb-faveo/js/ajax-jquery.min.js")}}"></script>
+        <script src="{{asset("lb-Faveo/js/ajax-jquery.min.js")}}"></script>
 
         <span id="wait"></span>
 
@@ -163,7 +163,7 @@ if (DB_HOST && DB_USER && DB_NAME) {
                 <div class="col-md-2">
                 </div>
                 <div class="col-md-9" style="text-align: center"id='loader' >
-                    <img src="{{asset("lb-faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
+                    <img src="{{asset("lb-Faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
                 </div>
             </div>
         </div>

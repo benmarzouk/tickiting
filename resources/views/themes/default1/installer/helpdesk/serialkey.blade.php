@@ -70,9 +70,9 @@ active
         </form>
     </div>    
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="{{asset("lb-faveo/js/jquery.autotab.js")}}"></script>
+<script src="{{asset("lb-Faveo/js/jquery.autotab.js")}}"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
-<script src="{{asset("lb-faveo/js/angular.js")}}" type="text/javascript"></script>
+<script src="{{asset("lb-Faveo/js/angular.js")}}" type="text/javascript"></script>
 <script type="text/javascript">
 var container = document.getElementsByClassName("container")[0];
 container.onkeyup = function(e) {

@@ -21,7 +21,7 @@
 
         </ul>
         <!--<li class="footer no-border"><div class="col-md-5"></div><div class="col-md-2">
-                <img src="{{asset("lb-faveo/media/images/gifloader.gif")}}" style="display: none;" id="notification-loader">
+                <img src="{{asset("lb-Faveo/media/images/gifloader.gif")}}" style="display: none;" id="notification-loader">
             </div><div class="col-md-5"></div></li>
         <li class="footer"><a href="{{ url('notifications-list')}}">View all</a>
         </li>-->

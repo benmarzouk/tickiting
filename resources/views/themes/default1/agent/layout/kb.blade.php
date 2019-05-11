@@ -11,18 +11,18 @@
         <!-- Ionicons -->
         <link href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet" type="text/css" />
         <!-- fullCalendar 2.2.5-->
-        <link href="{{asset("lb-faveo/plugins/fullcalendar/fullcalendar.min.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/plugins/fullcalendar/fullcalendar.min.css")}}" rel="stylesheet" type="text/css" />
 
-        <link href="{{asset("lb-faveo/plugins/fullcalendar/fullcalendar.print.css")}}" rel="stylesheet" type="text/css" media='print' />
+        <link href="{{asset("lb-Faveo/plugins/fullcalendar/fullcalendar.print.css")}}" rel="stylesheet" type="text/css" media='print' />
         <!-- Theme style -->
-        <link href="{{asset("lb-faveo/dist/css/AdminLTE.min.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/dist/css/AdminLTE.min.css")}}" rel="stylesheet" type="text/css" />
         <!-- AdminLTE Skins. Choose a skin from the css/skins
              folder instead of downloading all of them to reduce the load. -->
-        <link href="{{asset("lb-faveo/dist/css/skins/_all-skins.min.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/dist/css/skins/_all-skins.min.css")}}" rel="stylesheet" type="text/css" />
         <!-- iCheck -->
-        <link href="{{asset("lb-faveo/plugins/iCheck/flat/blue.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/plugins/iCheck/flat/blue.css")}}" rel="stylesheet" type="text/css" />
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <link rel="stylesheet" href="{{asset("lb-faveo/dist/css/tabby.css")}}" type="text/css">
+        <link rel="stylesheet" href="{{asset("lb-Faveo/dist/css/tabby.css")}}" type="text/css">
 
         <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
 
@@ -34,7 +34,7 @@
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-        <script type="text/javascript" src="{{asset('lb-faveo/dist/js/nicEdit.js')}}"></script>
+        <script type="text/javascript" src="{{asset('lb-Faveo/dist/js/nicEdit.js')}}"></script>
 
         @yield('HeadInclude')
     </head>
@@ -44,7 +44,7 @@
             <header class="main-header">
             <?php $settings = App\Model\kb\Settings::where('id', '=', '1')->first();?>
                 @if($settings->logo)
-                    <a href=""><img src="{{asset('lb-faveo/Img/icon/'.$settings->logo)}}" class="logo" alt="KNOWLEDGE BASE"/></a>
+                    <a href=""><img src="{{asset('lb-Faveo/Img/icon/'.$settings->logo)}}" class="logo" alt="KNOWLEDGE BASE"/></a>
                 @else
                     <a href="" class="logo">KNOWLEDGE BASE</a>
                 @endif
@@ -68,7 +68,7 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 @if(Auth::user())
                                     @if(Auth::user()->profile_pic)
-                                        <img src="{{asset('lb-faveo/dist/img')}}{{'/'}}{{Auth::user()->profile_pic}}" class="user-image" alt="User Image"/>
+                                        <img src="{{asset('lb-Faveo/dist/img')}}{{'/'}}{{Auth::user()->profile_pic}}" class="user-image" alt="User Image"/>
                                     @else
                                         <img src="{{ Gravatar::src(Auth::user()->email) }}" class="user-image" alt="User Image">
                                     @endif
@@ -80,7 +80,7 @@
                                     <li class="user-header">
                                 @if(Auth::user())
                                     @if(Auth::user()->profile_pic)
-                                        <img src="{{asset('lb-faveo/dist/img')}}{{'/'}}{{Auth::user()->profile_pic}}" class="img-circle" alt="User Image"/>
+                                        <img src="{{asset('lb-Faveo/dist/img')}}{{'/'}}{{Auth::user()->profile_pic}}" class="img-circle" alt="User Image"/>
                                     @else
                                         <img src="{{ Gravatar::src(Auth::user()->email) }}" class="img-circle" alt="User Image">
                                     @endif
@@ -127,7 +127,7 @@
                         <div class="user-panel">
                             <div class="pull-left image">
                                 @if(Auth::user() && Auth::user()->profile_pic)
-                                    <img src="{{asset('lb-faveo/dist/img')}}{{'/'}}{{Auth::user()->profile_pic}}" class="img-circle" alt="User Image" />
+                                    <img src="{{asset('lb-Faveo/dist/img')}}{{'/'}}{{Auth::user()->profile_pic}}" class="img-circle" alt="User Image" />
                                 @else
                                     <img src="{{ Gravatar::src(Auth::user()->email) }}" class="img-circle" alt="User Image">
                                 @endif
@@ -235,7 +235,7 @@
                 <div class="pull-right hidden-xs">
                     <b>{!! Lang::get('lang.version') !!}</b> {{$settings->version}}
                 </div>
-                <strong>Copyright &copy; {{date("Y")}} <a href="{{$settings->website}}"> {{$settings->company_name}}</a>.  Powered By <a href="http://www.faveohelpdesk.com">Faveo</a>.</strong>
+                <strong>Copyright &copy; {{date("Y")}} <a href="{{$settings->website}}"> {{$settings->company_name}}</a>.  Powered By <a href="http://www.Faveohelpdesk.com">Faveo</a>.</strong>
             </footer>
         </div><!-- ./wrapper -->
 
@@ -247,19 +247,19 @@
 
         <script type="text/javascript" src="//cdn.datatables.net/1.10.0/js/jquery.dataTables.js"></script>
         <!-- Slimscroll -->
-        <script src="{{asset("lb-faveo/plugins/slimScroll/jquery.slimscroll.min.js")}}" type="text/javascript"></script>
+        <script src="{{asset("lb-Faveo/plugins/slimScroll/jquery.slimscroll.min.js")}}" type="text/javascript"></script>
         <!-- FastClick -->
-        <script src='{{asset("lb-faveo/plugins/fastclick/fastclick.min.js")}}'></script>
+        <script src='{{asset("lb-Faveo/plugins/fastclick/fastclick.min.js")}}'></script>
         <!-- AdminLTE App -->
-        <script src="{{asset("lb-faveo/dist/js/app.min.js")}}" type="text/javascript"></script>
+        <script src="{{asset("lb-Faveo/dist/js/app.min.js")}}" type="text/javascript"></script>
         <!-- iCheck -->
-        <script src="{{asset("lb-faveo/plugins/iCheck/icheck.min.js")}}" type="text/javascript"></script>
+        <script src="{{asset("lb-Faveo/plugins/iCheck/icheck.min.js")}}" type="text/javascript"></script>
 
         <script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
 
-        <script src="{{asset("lb-faveo/plugins/filebrowser/plugin.js")}}"></script>
+        <script src="{{asset("lb-Faveo/plugins/filebrowser/plugin.js")}}"></script>
         <!-- Bootstrap WYSIHTML5 -->
-        <script src="{{asset('lb-faveo/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')}}" type="text/javascript"></script>
+        <script src="{{asset('lb-Faveo/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js')}}" type="text/javascript"></script>
 
         <script type="text/javascript">
             bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });

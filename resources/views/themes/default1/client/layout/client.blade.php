@@ -11,33 +11,33 @@
         }
         ?>
         <title> @yield('title') {!! strip_tags($title_name) !!} </title>
-        <!-- faveo favicon -->
-        <link href="{{asset("lb-faveo/media/images/favicon.ico")}}"  rel="shortcut icon" >
+        <!-- Faveo favicon -->
+        <link href="{{asset("lb-Faveo/media/images/favicon.ico")}}"  rel="shortcut icon" >
 
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- Bootstrap 3.3.2 -->
-        <link href="{{asset("lb-faveo/css/bootstrap.min.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/css/bootstrap.min.css")}}" rel="stylesheet" type="text/css" />
         <!-- Admin LTE CSS -->
-        <link href="{{asset("lb-faveo/css/AdminLTEsemi.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/css/AdminLTEsemi.css")}}" rel="stylesheet" type="text/css" />
         <!-- Font Awesome Icons -->
-        <link href="{{asset("lb-faveo/css/font-awesome.min.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/css/font-awesome.min.css")}}" rel="stylesheet" type="text/css" />
         <!-- Ionicons -->
-        <link href="{{asset("lb-faveo/css/ionicons.min.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/css/ionicons.min.css")}}" rel="stylesheet" type="text/css" />
         <!-- fullCalendar 2.2.5-->
-        <link href="{{asset("lb-faveo/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css")}}" rel="stylesheet" type="text/css" />
         <!-- Theme style -->
-        <link href="{{asset("lb-faveo/css/jquery.rating.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/css/jquery.rating.css")}}" rel="stylesheet" type="text/css" />
 
-        <link href="{{asset("lb-faveo/css/app.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/css/app.css")}}" rel="stylesheet" type="text/css" />
 
-        <link href="{{asset("lb-faveo/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css")}}" rel="stylesheet" type="text/css" />
 
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
 
-        <script src="{{asset("lb-faveo/js/jquery2.1.1.min.js")}}" type="text/javascript"></script>
+        <script src="{{asset("lb-Faveo/js/jquery2.1.1.min.js")}}" type="text/javascript"></script>
         @yield('HeadInclude')
     </head>
     <body>
@@ -100,7 +100,7 @@
                                                 @if(Auth::user())
                                                 @if(Auth::user()->role != 'user')
                                                 <div class="banner-content">
-                                                    <a href="{{url('dashboard')}}" class="btn btn-custom btn-xs">{!! Lang::get('lang.dashboard') !!}</a>
+                                                    <a href="{{url(' Tableau_De_Bord')}}" class="btn btn-custom btn-xs">{!! Lang::get('lang. Tableau_De_Bord') !!}</a>
                                                 </div>
                                                 @endif
                                                 @endif
@@ -200,11 +200,11 @@
 
                             <li class="dropdown">
                                     <?php $src = Lang::getLocale().'.png'; ?>
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><img src="{{asset("lb-faveo/flags/$src")}}"></img> &nbsp;<span class="caret"></span></a>
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true"><img src="{{asset("lb-Faveo/flags/$src")}}"></img> &nbsp;<span class="caret"></span></a>
                                         <ul class="dropdown-menu" role="menu">
                                             @foreach($langs as $key => $value)
                                                 <?php $src = $key.".png"; ?>
-                                                <li><a href="#" id="{{$key}}" onclick="changeLang(this.id)"><img src="{{asset("lb-faveo/flags/$src")}}"></img>&nbsp;{{$value[0]}}&nbsp;
+                                                <li><a href="#" id="{{$key}}" onclick="changeLang(this.id)"><img src="{{asset("lb-Faveo/flags/$src")}}"></img>&nbsp;{{$value[0]}}&nbsp;
                                             @if(Lang::getLocale() == "ar")
                                                 &rlm;
                                             @endif
@@ -350,7 +350,7 @@
                     <hr style="color:#E5E5E5"/>
                     <div class="row">
                         <div class="site-info col-md-6">
-                            <p class="text-muted">{!! Lang::get('lang.copyright') !!} &copy; {!! date('Y') !!}  <a href="{!! $company->website !!}" target="_blank">{!! $company->company_name !!}</a>. {!! Lang::get('lang.all_rights_reserved') !!}. {!! Lang::get('lang.powered_by') !!} <a href="http://www.faveohelpdesk.com/"  target="_blank">Faveo</a></p>
+                            <p class="text-muted">{!! Lang::get('lang.copyright') !!} &copy; {!! date('Y') !!}  <a href="{!! $company->website !!}" target="_blank">{!! $company->company_name !!}</a>. {!! Lang::get('lang.all_rights_reserved') !!}. {!! Lang::get('lang.powered_by') !!} <a href="http://www.Faveohelpdesk.com/"  target="_blank">Faveo</a></p>
                         </div>
                         <div class="site-social text-right col-md-6">
                             <?php $socials = App\Model\helpdesk\Theme\Widgets::all(); ?>
@@ -432,25 +432,25 @@
                     </div>
             </footer><!-- #colophon -->
             <!-- jQuery 2.1.1 -->
-            <script src="{{asset("lb-faveo/js/jquery2.1.1.min.js")}}" type="text/javascript"></script>
+            <script src="{{asset("lb-Faveo/js/jquery2.1.1.min.js")}}" type="text/javascript"></script>
             <!-- Bootstrap 3.3.2 JS -->
-            <script src="{{asset("lb-faveo/js/bootstrap.min.js")}}" type="text/javascript"></script>
+            <script src="{{asset("lb-Faveo/js/bootstrap.min.js")}}" type="text/javascript"></script>
             <!-- Slimscroll -->
-            <script src="{{asset("lb-faveo/js/superfish.js")}}" type="text/javascript"></script>
+            <script src="{{asset("lb-Faveo/js/superfish.js")}}" type="text/javascript"></script>
 
-            <script src="{{asset("lb-faveo/js/mobilemenu.js")}}" type="text/javascript"></script>
+            <script src="{{asset("lb-Faveo/js/mobilemenu.js")}}" type="text/javascript"></script>
 
-            <script src="{{asset("lb-faveo/js/know.js")}}" type="text/javascript"></script>
+            <script src="{{asset("lb-Faveo/js/know.js")}}" type="text/javascript"></script>
 
-            <script src="{{asset("lb-faveo/js/jquery.rating.pack.js")}}" type="text/javascript"></script>
+            <script src="{{asset("lb-Faveo/js/jquery.rating.pack.js")}}" type="text/javascript"></script>
 
-            <script src="{{asset("lb-faveo/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js")}}" type="text/javascript"></script>
+            <script src="{{asset("lb-Faveo/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js")}}" type="text/javascript"></script>
 
-            <script src="{{asset("lb-faveo/plugins/iCheck/icheck.min.js")}}" type="text/javascript"></script>
+            <script src="{{asset("lb-Faveo/plugins/iCheck/icheck.min.js")}}" type="text/javascript"></script>
 
-            <script src="{{asset("lb-faveo/js/languagechanger.js")}}" type="text/javascript"></script>
+            <script src="{{asset("lb-Faveo/js/languagechanger.js")}}" type="text/javascript"></script>
 
-            <script src="{{asset("lb-faveo/js/languagechanger.js")}}" type="text/javascript"></script>
+            <script src="{{asset("lb-Faveo/js/languagechanger.js")}}" type="text/javascript"></script>
 
             <script>
 $(function () {

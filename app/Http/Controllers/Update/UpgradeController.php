@@ -42,7 +42,7 @@ class UpgradeController extends Controller
             $post_data = [
                 'data' => $data,
             ];
-            $url = 'http://faveohelpdesk.com/billing/public/verification';
+            $url = 'http://Faveohelpdesk.com/billing/public/verification';
             if (str_contains($url, ' ')) {
                 $url = str_replace(' ', '%20', $url);
             }
@@ -64,7 +64,7 @@ class UpgradeController extends Controller
     public function downloadLatestCode()
     {
         $name = \Config::get('app.name');
-        $durl = 'http://www.faveohelpdesk.com/billing/public/download-url';
+        $durl = 'http://www.Faveohelpdesk.com/billing/public/download-url';
         if (str_contains($durl, ' ')) {
             $durl = str_replace(' ', '%20', $durl);
         }
@@ -94,7 +94,7 @@ class UpgradeController extends Controller
             \File::makeDirectory($this->dir.'/UPDATES/', 0777);
         }
 
-        $dlHandler = fopen($this->dir.'/UPDATES/'.'/faveo-helpdesk-master.zip', 'w');
+        $dlHandler = fopen($this->dir.'/UPDATES/'.'/Faveo-helpdesk-master.zip', 'w');
         if (!fwrite($dlHandler, $newUpdate)) {
             echo '<p>Could not save new update. Operation aborted.</p>';
             exit();
@@ -124,8 +124,8 @@ class UpgradeController extends Controller
             //Artisan::call('down');
             $update = $this->dir.'/UPDATES';
             //Open The File And Do Stuff
-            $zipHandle = zip_open($update.'/faveo-helpdesk-master.zip');
-            //dd($update . '/faveo-' . $aV . '.zip');
+            $zipHandle = zip_open($update.'/Faveo-helpdesk-master.zip');
+            //dd($update . '/Faveo-' . $aV . '.zip');
 
             echo '<ul class=list-unstyled>';
             while ($aF = zip_read($zipHandle)) {
@@ -230,7 +230,7 @@ class UpgradeController extends Controller
                 return view('themes.default1.update.file', compact('url'));
             }
 
-            return redirect('dashboard')->with('fails', 'Could not find latest realeases from repository.');
+            return redirect(' Tableau_De_Bord')->with('fails', 'Could not find latest realeases from repository.');
         } catch (Exception $ex) {
             return redirect()->back()->with('fails', $ex->getMessage());
         }
@@ -249,7 +249,7 @@ class UpgradeController extends Controller
                 }
             }
 
-            return redirect('dashboard')->with('fails', 'Could not find latest realeases from repository.');
+            return redirect(' Tableau_De_Bord')->with('fails', 'Could not find latest realeases from repository.');
 
 //            else {
 //                return redirect()->back();
@@ -282,7 +282,7 @@ class UpgradeController extends Controller
                 if ($latest_version > $current_version) {
                     echo '<p>New Update Found: v'.$latest_version.'</p>';
                     $found = true;
-                    if (!is_file("$this->dir/UPDATES/faveo-helpdesk-master.zip")) {
+                    if (!is_file("$this->dir/UPDATES/Faveo-helpdesk-master.zip")) {
                         if ($request->get('dodownload') == true) {
                             $download_url = $this->downloadLatestCode();
                             if ($download_url != null) {
@@ -412,7 +412,7 @@ class UpgradeController extends Controller
             if (Utility::getFileVersion() > Utility::getDatabaseVersion()) {
                 Artisan::call('migrate', ['--force' => true]);
 
-                return redirect('dashboard')->with('success', 'Database updated');
+                return redirect(' Tableau_De_Bord')->with('success', 'Database updated');
             } else {
                 return redirect()->back();
             }

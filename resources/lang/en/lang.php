@@ -973,10 +973,10 @@ return [
     'User-Created-Successfully'         => 'User created successfully.',
     /*
       |-----------------------------------------------
-      |  Dashboard
+      | Tableau_De_Bord
       |-----------------------------------------------
      */
-    'dashboard'         => 'Dashboard',
+    ' Tableau_De_Bord'         => ' Tableau_De_Bord',
     'line_chart'        => 'Line chart',
     'statistics'        => 'Statistics',
     'opened'            => 'Opened',
@@ -989,7 +989,7 @@ return [
     'report'            => 'Report',
     'Legend'            => 'LEGENDS',
     'total'             => 'Total',
-    'dashboard_reports' => 'Dashboard reports',
+    ' Tableau_De_Bord_reports' => ' Tableau_De_Bord reports',
     /*
       |------------------------------------------------
       |User Page
@@ -1597,7 +1597,7 @@ return [
     'your_helpdesk_is_ready'                       => 'Your Helpdesk is Ready!',
     'all_right_sparky_you_have_made_it'            => 'All right, sparky! You’ve made it through the installation.',
     'next_step'                                    => 'Next Step',
-    'login_to_faveo'                               => 'Login to Faveo',
+    'login_to_Faveo'                               => 'Login to Faveo',
     'learn_more'                                   => 'Learn More',
     'video_walk_through'                           => 'Video walk through',
     'email_support'                                => 'Email Support',

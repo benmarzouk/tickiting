@@ -41,7 +41,7 @@ class AuthController extends Controller
     /* to redirect after login */
 
     // if auth is agent
-    protected $redirectTo = '/dashboard';
+    protected $redirectTo = '/ Tableau_De_Bord';
     // if auth is user
     protected $redirectToUser = '/profile';
     /* Direct After Logout */
@@ -130,7 +130,7 @@ class AuthController extends Controller
         \Event::fire(new \App\Events\FormRegisterEvent());
         if (Auth::user()) {
             if (Auth::user()->role == 'admin' || Auth::user()->role == 'agent') {
-                return \Redirect::route('dashboard');
+                return \Redirect::route(' Tableau_De_Bord');
             } elseif (Auth::user()->role == 'user') {
                 // return view('auth.register');
             }
@@ -272,7 +272,7 @@ class AuthController extends Controller
         if (file_exists($directory.DIRECTORY_SEPARATOR.'.env')) {
             if (Auth::user()) {
                 if (Auth::user()->role == 'admin' || Auth::user()->role == 'agent') {
-                    return \Redirect::route('dashboard');
+                    return \Redirect::route(' Tableau_De_Bord');
                 } elseif (Auth::user()->role == 'user') {
                     return \Redirect::route('home');
                 }
@@ -660,7 +660,7 @@ class AuthController extends Controller
     {
         $auth = Auth::user();
         if ($auth && $auth->role != 'user') {
-            return 'dashboard';
+            return ' Tableau_De_Bord';
         } else {
             return '/';
         }

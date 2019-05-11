@@ -23,7 +23,7 @@ class="active"
 <!-- breadcrumbs -->
 @section('breadcrumbs')
 <ol class="breadcrumb">
-    <li><a href="{!! URL::route('setting') !!}"><i class="fa fa-dashboard"></i> {!! Lang::get('lang.home') !!}</a></li>
+    <li><a href="{!! URL::route('setting') !!}"><i class="fa fa- Tableau_De_Bord"></i> {!! Lang::get('lang.home') !!}</a></li>
     <li><a href="{!! URL::route('workflow') !!}">{!! Lang::get('lang.ticket_workflow') !!}</a></li>
     <li class="active"><a href="{!! URL::route('workflow.create') !!}">{!! Lang::get('lang.create_workflow') !!}</a></li>
 </ol>

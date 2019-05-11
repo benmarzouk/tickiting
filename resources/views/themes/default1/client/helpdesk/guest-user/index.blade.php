@@ -5,12 +5,12 @@
 @stop
 
 @section('HeadInclude')
-<link href="{{asset("lb-faveo/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css")}}" rel="stylesheet" type="text/css" />
-           <link href="{{asset("lb-faveo/css/widgetbox.css")}}" rel="stylesheet" type="text/css" />
-        <link href="{{asset("lb-faveo/plugins/iCheck/flat/blue.css")}}" rel="stylesheet" type="text/css" />
+<link href="{{asset("lb-Faveo/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css")}}" rel="stylesheet" type="text/css" />
+           <link href="{{asset("lb-Faveo/css/widgetbox.css")}}" rel="stylesheet" type="text/css" />
+        <link href="{{asset("lb-Faveo/plugins/iCheck/flat/blue.css")}}" rel="stylesheet" type="text/css" />
         <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
         {{-- <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css"> --}}
-        <link href="{{asset("lb-faveo/css/jquerysctipttop.css")}}" rel="stylesheet" type="text/css">
+        <link href="{{asset("lb-Faveo/css/jquerysctipttop.css")}}" rel="stylesheet" type="text/css">
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 @stop
 @section('breadcrumb')
@@ -40,7 +40,7 @@
         @if(Auth::user())
         @else
             <span onclick="javascript: window.location.href='{{url('auth/register')}}';">
-                <a href="{{url('auth/register')}}" class="widgetrowitem defaultwidget" style="background-image: URL('lb-faveo/media/images/register.png');">
+                <a href="{{url('auth/register')}}" class="widgetrowitem defaultwidget" style="background-image: URL('lb-Faveo/media/images/register.png');">
                     <span class="widgetitemtitle">{!! Lang::get('lang.register') !!}</span>
                 </a>
             </span>
@@ -51,7 +51,7 @@
             @if($system->status) 
                 @if($system->status == 1)
                     <span onclick="javascript: window.location.href='{!! URL::route('form') !!}';">
-                        <a href="{!! URL::route('form') !!}" class="widgetrowitem defaultwidget" style="background-image: URL('lb-faveo/media/images/submitticket.png');">
+                        <a href="{!! URL::route('form') !!}" class="widgetrowitem defaultwidget" style="background-image: URL('lb-Faveo/media/images/submitticket.png');">
                             <span class="widgetitemtitle">{!! Lang::get('lang.submit_a_ticket') !!}</span>
                         </a>
                     </span>
@@ -59,12 +59,12 @@
             @endif
         @endif
             <span onclick="javascript: window.location.href='{{url('mytickets')}}';">
-                <a href="{{url('mytickets')}}" class="widgetrowitem defaultwidget" style="background-image: URL('lb-faveo/media/images/news.png');">
+                <a href="{{url('mytickets')}}" class="widgetrowitem defaultwidget" style="background-image: URL('lb-Faveo/media/images/news.png');">
                     <span class="widgetitemtitle">{!! Lang::get('lang.my_tickets') !!}</span>
                 </a>
             </span>
             <span onclick="javascript: window.location.href='{{url('/knowledgebase')}}';">
-                <a href="{{url('/knowledgebase')}}" class="widgetrowitem defaultwidget" style="background-image: URL('lb-faveo/media/images/knowledgebase.png');">
+                <a href="{{url('/knowledgebase')}}" class="widgetrowitem defaultwidget" style="background-image: URL('lb-Faveo/media/images/knowledgebase.png');">
                     <span class="widgetitemtitle">{!! Lang::get('lang.knowledge_base') !!}</span>
                 </a>
             </span>

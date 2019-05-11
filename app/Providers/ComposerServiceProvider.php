@@ -22,7 +22,7 @@ class ComposerServiceProvider extends ServiceProvider
         view()->composer(
             [
                 'themes.default1.agent.layout.agent',
-                'themes.default1.agent.helpdesk.dashboard.dashboard',
+                'themes.default1.agent.helpdesk. Tableau_De_Bord. Tableau_De_Bord',
                 'themes.default1.admin.layout.admin',
                 'themes.default1.admin.helpdesk.setting',
                 $service_desk,

@@ -4,7 +4,7 @@
 <!-- header -->
 @section('PageHeader')
 <h3>
-   Dashboard
+  Tableau_De_Bord
    <!-- <small>Add</small> -->
 </h3>
 @stop

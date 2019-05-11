@@ -224,7 +224,7 @@ class="active"
             <div class="modal-header">
                 <div id="head">
                     <button type="button" class="close" id="close" data-dismiss="modal" aria-label="Close" style="display:none;"><span aria-hidden="true">×</span></button>
-                    <div class="col-md-5"></div><div class="col-md-2"><img src="{{asset("lb-faveo/media/images/gifloader.gif")}}" ></div><div class="col-md-5"></div>
+                    <div class="col-md-5"></div><div class="col-md-2"><img src="{{asset("lb-Faveo/media/images/gifloader.gif")}}" ></div><div class="col-md-5"></div>
                     <br/>
                     <br/>
                     <br/>

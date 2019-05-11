@@ -109,7 +109,7 @@ class="active"
                     <div class="col-md-4">
                     </div>
                     <div class="col-md-6" id="merge_loader"  style="display:none;">
-                        <img src="{{asset("lb-faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
+                        <img src="{{asset("lb-Faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
                     </div><!-- /.merge-loader -->
                 </div>
                 <div id="merge_body">
@@ -173,7 +173,7 @@ class="active"
                     <div class="col-md-4">
                     </div>
                     <div class="col-md-6" id="assign_loader"  style="display:none;">
-                        <img src="{{asset("lb-faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
+                        <img src="{{asset("lb-Faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
                     </div><!-- /.merge-loader -->
                 </div>
                 <div id="assign_body">

@@ -66,7 +66,7 @@ class="active"
 </div>
 @endif
 <div class="box">
-      <link rel="stylesheet" href="{{asset('lb-faveo/plugins/colorpicker/bootstrap-colorpicker.min.css')}}">
+      <link rel="stylesheet" href="{{asset('lb-Faveo/plugins/colorpicker/bootstrap-colorpicker.min.css')}}">
     <div class="box-header">
         <div class="box-title">
             New Label
@@ -118,7 +118,7 @@ class="active"
 </div>
 @stop
 @section('FooterInclude')
-<script src="{{asset('lb-faveo/plugins/colorpicker/bootstrap-colorpicker.min.js')}}"></script>
+<script src="{{asset('lb-Faveo/plugins/colorpicker/bootstrap-colorpicker.min.js')}}"></script>
 <script>
 //Colorpicker
     $(".my-colorpicker1").colorpicker();

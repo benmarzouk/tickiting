@@ -45,7 +45,7 @@ class InstallDB extends Command
             if ($this->confirm('Do you want to migrate tables now?')) {
                 $env = base_path().DIRECTORY_SEPARATOR.'.env';
                 if (!is_file($env)) {
-                    throw new \Exception("Please run 'php artisan install:faveo'");
+                    throw new \Exception("Please run 'php artisan install:Faveo'");
                 }
                 $dummy_confirm = $this->confirm('Would you like to install dummy data in database to test before going live?');
                 $this->call('key:generate', ['--force' => true]);

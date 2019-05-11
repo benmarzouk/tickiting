@@ -1,7 +1,7 @@
 @extends('themes.default1.client.layout.client')
 
 @section('HeadInclude')
-<link href="{{asset("lb-faveo/css/AdminLTE.css")}}" rel="stylesheet" type="text/css" />
+<link href="{{asset("lb-Faveo/css/AdminLTE.css")}}" rel="stylesheet" type="text/css" />
 @stop
 
 @section('profile')
@@ -192,7 +192,7 @@ class="active"
                         <div class="row">
                             <div class="col-md-12">
                             <div id="loader2" style="display:none">
-                                <center><img src="{{asset('lb-faveo/media/images/gifloader.gif')}}"></center>
+                                <center><img src="{{asset('lb-Faveo/media/images/gifloader.gif')}}"></center>
                             </div>
                             <div id="verify-success" style="display:none" class="alert alert-success alert-dismissable">
                                 <i class="fa  fa-check-circle"> </i>

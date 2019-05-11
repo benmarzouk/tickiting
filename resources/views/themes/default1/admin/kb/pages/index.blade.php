@@ -7,7 +7,7 @@
 @stop
 @section('content')
 
-    <link href="{{asset('lb-faveo/dist/css/dataTables.bootstrap.css')}}" rel="stylesheet">
+    <link href="{{asset('lb-Faveo/dist/css/dataTables.bootstrap.css')}}" rel="stylesheet">
     
 <div class="box box-primary">
 <div class="box-header">
@@ -68,5 +68,5 @@
     </div>
 
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.1/js/bootstrap.min.js"></script>
-    <script src="{{asset('lb-faveo/dist/js/page.js')}}"></script>
+    <script src="{{asset('lb-Faveo/dist/js/page.js')}}"></script>
 @stop

@@ -239,7 +239,7 @@ if ($thread->title != "") {
                     <div class="col-md-4">
                     </div>
                     <div class="col-md-4">
-                        <img src="{{asset("lb-faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
+                        <img src="{{asset("lb-Faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
                     </div>
                 </div>
                 <div id="hide2">
@@ -313,7 +313,7 @@ if ($thread->title != "") {
 </div>
 <?php Event::fire('ticket.timeline.marble',array($TicketData));?>
 <div id="gifshow" style="display:none">
-    <img src="{{asset("lb-faveo/media/images/gifloader.gif")}}">
+    <img src="{{asset("lb-Faveo/media/images/gifloader.gif")}}">
 </div>  <!-- added 05/05/2016-->
 <div id="resultdiv">
 </div>
@@ -347,7 +347,7 @@ if ($thread->title != "") {
                         <div class="col-md-4">
                         </div>
                         <div class="col-md-4">
-                            <img src="{{asset("lb-faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
+                            <img src="{{asset("lb-Faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
                         </div>
                         </br>
                         </br>
@@ -487,7 +487,7 @@ if ($thread->title != "") {
                         <div class="col-md-4">
                         </div>
                         <div class="col-md-4">
-                            <img src="{{asset("lb-faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
+                            <img src="{{asset("lb-Faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
                         </div>
                         </br>
                         </br>
@@ -553,8 +553,8 @@ if ($thread->title != "") {
                 </ul>
 
                 <div class="col-md-12" >
-                    <link rel="stylesheet" type="text/css" href="{{asset("lb-faveo/css/faveo-css.css")}}">
-                    <link href="{{asset("lb-faveo/css/jquery.rating.css")}}" rel="stylesheet" type="text/css" />
+                    <link rel="stylesheet" type="text/css" href="{{asset("lb-Faveo/css/Faveo-css.css")}}">
+                    <link href="{{asset("lb-Faveo/css/jquery.rating.css")}}" rel="stylesheet" type="text/css" />
                     
                     <!-- The time line -->
                     <ul class="timeline">
@@ -676,7 +676,7 @@ if ($thread->title != "") {
                                                 @if($conversation->user_id != null) 
                                                     <img src="{{$role->profile_pic}}"class="img-circle img-bordered-sm" alt="User Image"/>
                                                 @else 
-                                                    <img src="{{asset('lb-faveo/media/images/avatar_1.png')}}" class="img-circle img-bordered-sm" alt="img-circle img-bordered-sm">
+                                                    <img src="{{asset('lb-Faveo/media/images/avatar_1.png')}}" class="img-circle img-bordered-sm" alt="img-circle img-bordered-sm">
                                                 @endif
                                                 <span class="username"  style="margin-bottom:4px;margin-top:2px;">
                                                     @if($conversation->user_id != null) 
@@ -905,7 +905,7 @@ if ($thread->title != "") {
                             <div class="col-xs-5">
                             </div>
                             <div class="col-xs-2">
-                                <img src="{{asset("lb-faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
+                                <img src="{{asset("lb-Faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
                             </div>
                             <div class="col-xs-5">
                             </div>
@@ -970,7 +970,7 @@ if ($thread->title != "") {
                                     <div class="col-md-4">
                                     </div>
                                     <div class="col-md-6" id="change_loader" style="display:none;">
-                                        <img src="{{asset("lb-faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
+                                        <img src="{{asset("lb-Faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
                                     </div>
                                 </div>
                                 <div id="change_body">
@@ -1018,7 +1018,7 @@ if ($thread->title != "") {
                                         <div class="col-xs-5">
                                         </div>
                                         <div class="col-xs-2">
-                                            <img src="{{asset("lb-faveo/media/images/gifloader.gif")}}"> 
+                                            <img src="{{asset("lb-Faveo/media/images/gifloader.gif")}}"> 
                                         </div>
                                         <div class="col-xs-5">
                                         </div>
@@ -1061,7 +1061,7 @@ if ($thread->title != "") {
                             <div class="col-md-4">
                             </div>
                             <div class="col-md-6" id="assign_loader" style="display:none;">
-                                <img src="{{asset("lb-faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
+                                <img src="{{asset("lb-Faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
                             </div>
                         </div>
                         <div id="assign_body">
@@ -1134,7 +1134,7 @@ if ($thread->title != "") {
                                         <div class="col-xs-5">
                                         </div>
                                         <div class="col-xs-2">
-                                            <img src="{{asset("lb-faveo/media/images/gifloader.gif")}}"> 
+                                            <img src="{{asset("lb-Faveo/media/images/gifloader.gif")}}"> 
                                         </div>
                                         <div class="col-xs-5">
                                         </div>
@@ -1160,7 +1160,7 @@ if ($thread->title != "") {
                                         <div class="col-xs-5">
                                         </div>
                                         <div class="col-xs-2">
-                                            <img src="{{asset("lb-faveo/media/images/gifloader.gif")}}"> 
+                                            <img src="{{asset("lb-Faveo/media/images/gifloader.gif")}}"> 
                                         </div>
                                         <div class="col-xs-5">
                                         </div>
@@ -1240,7 +1240,7 @@ if ($thread->title != "") {
                     <div class="col-md-4">
                     </div>
                     <div class="col-md-6" id="merge_loader"  style="display:none;">
-                        <img src="{{asset("lb-faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
+                        <img src="{{asset("lb-Faveo/media/images/gifloader.gif")}}"><br/><br/><br/>
                     </div><!-- /.merge-loader -->
                 </div>
                 <div id="merge_body">
@@ -1273,7 +1273,7 @@ if ($thread->title != "") {
                             <div class="col-md-6">
                                 <label>{!! Lang::get('lang.select-pparent-ticket') !!}</label>
                                 <div id="parent-loader" style="display:none;">
-                                    <img src="{{asset("lb-faveo/media/images/gifloader.gif")}}" height="30px" width="30px">
+                                    <img src="{{asset("lb-Faveo/media/images/gifloader.gif")}}" height="30px" width="30px">
                                 </div>
                                 <div id="parent-body" >
 
@@ -1781,7 +1781,7 @@ if ($thread->title != "") {
                             var head= document.getElementsByTagName('head')[0];
                             var script= document.createElement('script');
                             script.type= 'text/javascript';
-                            script.src= '{{asset("lb-faveo/js/jquery.rating.pack.js")}}';
+                            script.src= '{{asset("lb-Faveo/js/jquery.rating.pack.js")}}';
                             head.appendChild(script);
 //                            $('.rating-cancel').hide();
 //                            $(".star-rating-control").attr("disabled", "disabled").off('hover');
@@ -1906,7 +1906,7 @@ if ($thread->title != "") {
                     $("#alert11").show();
                     $('#message-success1').html(message);
                     setInterval(function(){$("#dismiss11").trigger("click"); }, 2000);
-                    // $("#refresh1").load( "http://localhost/faveo/public/thread/{{$tickets->id}}   #refresh1");
+                    // $("#refresh1").load( "http://localhost/Faveo/public/thread/{{$tickets->id}}   #refresh1");
                     $('#surrender_button').hide();
             }
             else

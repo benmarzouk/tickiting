@@ -1,18 +1,18 @@
 @extends('themes.default1.agent.layout.agent')
 
-@section('Dashboard')
+@section(' Tableau_De_Bord')
 class="active"
 @stop
 
-@section('dashboard-bar')
+@section(' Tableau_De_Bord-bar')
 active
 @stop
 
 @section('PageHeader')
-<h1>{!! Lang::get('lang.dashboard_reports') !!}</h1>
+<h1>{!! Lang::get('lang. Tableau_De_Bord_reports') !!}</h1>
 @stop
 
-@section('dashboard')
+@section(' Tableau_De_Bord')
 class="active"
 @stop
 
@@ -35,8 +35,8 @@ class="active"
             {{Session::get('fails')}}
         </div>
         @endif
-<link type="text/css" href="{{asset("lb-faveo/css/bootstrap-datetimepicker4.7.14.min.css")}}" rel="stylesheet">
-{{-- <script src="{{asset("lb-faveo/dist/js/bootstrap-datetimepicker4.7.14.min.js")}}" type="text/javascript"></script> --}}
+<link type="text/css" href="{{asset("lb-Faveo/css/bootstrap-datetimepicker4.7.14.min.css")}}" rel="stylesheet">
+{{-- <script src="{{asset("lb-Faveo/dist/js/bootstrap-datetimepicker4.7.14.min.js")}}" type="text/javascript"></script> --}}
 <div class="row">
     <?php
     if (Auth::user()->role == 'admin') {
@@ -267,9 +267,9 @@ class="active"
     </div>
 </div>
 <div id="refresh"> 
-    <script src="{{asset("lb-faveo/plugins/chartjs/Chart.min.js")}}" type="text/javascript"></script>
+    <script src="{{asset("lb-Faveo/plugins/chartjs/Chart.min.js")}}" type="text/javascript"></script>
 </div>
-<script src="{{asset("lb-faveo/plugins/chartjs/Chart.min.js")}}" type="text/javascript"></script>
+<script src="{{asset("lb-Faveo/plugins/chartjs/Chart.min.js")}}" type="text/javascript"></script>
 <script type="text/javascript">
                         $(document).ready(function() {
                             $.getJSON("agen", function(result) {
@@ -552,6 +552,6 @@ class="active"
         });
     });
 </script>
-<script src="{{asset("lb-faveo/plugins/moment-develop/moment.js")}}" type="text/javascript"></script>
-<script src="{{asset("lb-faveo/js/bootstrap-datetimepicker4.7.14.min.js")}}" type="text/javascript"></script>
+<script src="{{asset("lb-Faveo/plugins/moment-develop/moment.js")}}" type="text/javascript"></script>
+<script src="{{asset("lb-Faveo/js/bootstrap-datetimepicker4.7.14.min.js")}}" type="text/javascript"></script>
 @stop

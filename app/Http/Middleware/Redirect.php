@@ -16,7 +16,7 @@ class Redirect
      */
     public function handle($request, Closure $next)
     {
-        $root = $request->root(); //http://localhost/faveo/Faveo-Helpdesk-Pro-fork/public
+        $root = $request->root(); //http://localhost/Faveo/Faveo-Helpdesk-Pro-fork/public
         $url = $this->setAppUrl($request);
         if ($url == $root) {
             return $next($request);

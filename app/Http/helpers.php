@@ -131,7 +131,7 @@ function isInstall()
     return $check;
 }
 
-function faveotime($date, $hour = 0, $min = 0, $sec = 0)
+function Faveotime($date, $hour = 0, $min = 0, $sec = 0)
 {
     if (is_bool($hour) && $hour == true) {
         $hour = $date->hour;
@@ -183,7 +183,7 @@ function utfEncoding($name)
     return $name;
 }
 
-function faveoDate($date = '', $format = '', $tz = '')
+function FaveoDate($date = '', $format = '', $tz = '')
 {
     if (!$date) {
         $date = \Carbon\Carbon::now();

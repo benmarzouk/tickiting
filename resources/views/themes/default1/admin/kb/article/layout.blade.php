@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-        <title>Faveo | KB</title>
+        <title>1WAY | KB</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.4 -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -36,7 +36,7 @@
 
       <header class="main-header">
             <?php $settings = App\Model\Settings::where('id', '=', '1')->first();?>
-            <img src="{{asset('Img/icon/faveokb.jpg')}}" class="logo" alt="Knowledge Base"/>
+            <img src="{{asset('Img/icon/Faveokb.jpg')}}" class="logo" alt="Knowledge Base"/>
                 {{-- <a href="../../index2.html" class="logo"><b>Faveo</b> Knowledge</a> --}}
                 <!-- Header Navbar: style can be found in header.less -->
                 <nav class="navbar navbar-static-top" role="navigation">
@@ -199,7 +199,7 @@
                 <div class="pull-right hidden-xs">
                     <b>{!! Lang::get('lang.version') !!}</b> {{$settings->version}}
                 </div>
-                 <strong>Copyright &copy; {{date("Y")}} <a href="{{$settings->website}}"> {{$settings->company_name}}</a>.  Powered By <a href="http://www.faveohelpdesk.com">Faveo</a>.</strong>
+                 <strong>Copyright &copy; {{date("Y")}} <a href="{{$settings->website}}"> {{$settings->company_name}}</a>.  Powered By <a href="http://www.Faveohelpdesk.com">Faveo</a>.</strong>
             </footer>
 
       <!-- Control Sidebar -->
@@ -224,8 +224,8 @@
     <!-- ChartJS 1.0.1 -->
     <script src="plugins/chartjs/Chart.min.js" type="text/javascript"></script>
 
-    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="dist/js/pages/dashboard2.js" type="text/javascript"></script>
+    <!-- AdminLTETableau_De_Bord demo (This is only for demo purposes) -->
+    <script src="dist/js/pages/ Tableau_De_Bord2.js" type="text/javascript"></script>
 
     <!-- AdminLTE for demo purposes -->
     <script src="dist/js/demo.js" type="text/javascript"></script>

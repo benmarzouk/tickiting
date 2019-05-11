@@ -88,7 +88,7 @@ class LanguageController extends Controller
 
         return \Datatable::collection(new Collection($values))
                         ->addColumn('language', function ($model) {
-                            $img_src = 'lb-faveo/flags/'.$model.'.png';
+                            $img_src = 'lb-Faveo/flags/'.$model.'.png';
                             if ($model == Config::get('app.fallback_locale')) {
                                 return '<img src="'.asset($img_src).'"/>&nbsp;'.Config::get('languages.'.$model)[0].' ('.Lang::get('lang.default-fallback').')';
                             } else {
@@ -188,7 +188,7 @@ class LanguageController extends Controller
                             if ($success) {
                                 //sending back with error message
                                 Session::flash('fails', Lang::get('lang.zipp-error'));
-                                Session::flash('link2', 'http://www.ladybirdweb.com/support/show/how-to-translate-faveo-into-multiple-languages');
+                                Session::flash('link2', 'http://www.ladybirdweb.com/support/show/how-to-translate-Faveo-into-multiple-languages');
 
                                 return Redirect::back()->withInput();
                             }

@@ -18,8 +18,8 @@ return [
       | Error Log
       |--------------------------------------------------------------------------
       |
-      | This error log will send email to faveo about the errors. So that before
-      | reporting about the errors we at faveo will start solving the issues already.
+      | This error log will send email to Faveo about the errors. So that before
+      | reporting about the errors we at Faveo will start solving the issues already.
       | The errors mails will never share your files or data. it will only share
       | the line number and error occured.
       | To dissable you may just change '%0%' to 0.
@@ -42,7 +42,7 @@ return [
       | This Applocation name is used for installation and update checking
       |
      */
-    'name' => 'Faveo Helpdesk Community',
+    'name' => '1WAY Helpdesk Community',
     /*
       |--------------------------------------------------------------------------
       | Application URL
@@ -117,8 +117,8 @@ return [
       | Bugsnag error reporting
       |-----------------------------------------------------------------------------------
       |Accepts true or false as a value. It decides whether to send the error
-      |to FAVEO team when any exception/error occurs or not. True value of this variable will
-      |allow application to send error reports to FAVEO team's bugsnag log.
+      |to Faveo team when any exception/error occurs or not. True value of this variable will
+      |allow application to send error reports to Faveo team's bugsnag log.
      */
     'bugsnag_reporting' => env('APP_BUGSNAG', true),
     /*

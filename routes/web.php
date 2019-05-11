@@ -291,13 +291,13 @@ Route::group(['middleware' => ['web']], function () {
       |
      */
     Route::group(['middleware' => 'role.agent', 'middleware' => 'auth', 'middleware' => 'install', 'middleware' => 'update'], function () {
-        Route::post('chart-range/{date1}/{date2}', ['as' => 'post.chart', 'uses' => 'Agent\helpdesk\DashboardController@ChartData']);
-        Route::get('agen1', 'Agent\helpdesk\DashboardController@ChartData');
-        Route::post('chart-range', ['as' => 'post.chart', 'uses' => 'Agent\helpdesk\DashboardController@ChartData']);
-        Route::post('user-chart-range/{id}/{date1}/{date2}', ['as' => 'post.user.chart', 'uses' => 'Agent\helpdesk\DashboardController@userChartData']);
-        Route::get('user-agen/{id}', 'Agent\helpdesk\DashboardController@userChartData');
-        Route::get('user-agen1', 'Agent\helpdesk\DashboardController@userChartData');
-        Route::post('user-chart-range', ['as' => 'post.user.chart', 'uses' => 'Agent\helpdesk\DashboardController@userChartData']);
+        Route::post('chart-range/{date1}/{date2}', ['as' => 'post.chart', 'uses' => 'Agent\helpdesk\ Tableau_De_BordController@ChartData']);
+        Route::get('agen1', 'Agent\helpdesk\ Tableau_De_BordController@ChartData');
+        Route::post('chart-range', ['as' => 'post.chart', 'uses' => 'Agent\helpdesk\ Tableau_De_BordController@ChartData']);
+        Route::post('user-chart-range/{id}/{date1}/{date2}', ['as' => 'post.user.chart', 'uses' => 'Agent\helpdesk\ Tableau_De_BordController@userChartData']);
+        Route::get('user-agen/{id}', 'Agent\helpdesk\ Tableau_De_BordController@userChartData');
+        Route::get('user-agen1', 'Agent\helpdesk\ Tableau_De_BordController@userChartData');
+        Route::post('user-chart-range', ['as' => 'post.user.chart', 'uses' => 'Agent\helpdesk\ Tableau_De_BordController@userChartData']);
         Route::resource('user', 'Agent\helpdesk\UserController'); /* User router is used to control the CRUD of user */
         Route::get('user-export', ['as' => 'user.export', 'uses' => 'Agent\helpdesk\UserController@getExportUser']); /* User router is used to control the CRUD of user */
         Route::post('user-export', ['as' => 'user.export.post', 'uses' => 'Agent\helpdesk\UserController@exportUser']); /* User router is used to control the CRUD of user */
@@ -354,9 +354,9 @@ Route::group(['middleware' => ['web']], function () {
         Route::get('/email/ban/{id}', ['as' => 'ban.email', 'uses' => 'Agent\helpdesk\TicketController@ban']); /*  Get Ban Email */
         Route::get('/ticket/surrender/{id}', ['as' => 'ticket.surrender', 'uses' => 'Agent\helpdesk\TicketController@surrender']); /*  Get Ticket Surrender */
         Route::get('/aaaa', 'Client\helpdesk\GuestController@ticket_number');
-        Route::get('dashboard', ['as' => 'dashboard', 'uses' => 'Agent\helpdesk\DashboardController@index']); /* To show dashboard pages */
+        Route::get(' Tableau_De_Bord', ['as' => ' Tableau_De_Bord', 'uses' => 'Agent\helpdesk\ Tableau_De_BordController@index']); /* To showTableau_De_Bord pages */
 
-        Route::get('agen', 'Agent\helpdesk\DashboardController@ChartData');
+        Route::get('agen', 'Agent\helpdesk\ Tableau_De_BordController@ChartData');
         Route::get('image/{id}', ['as' => 'image', 'uses' => 'Agent\helpdesk\MailController@get_data']); /* get image */
         Route::get('thread/auto/{id}', 'Agent\helpdesk\TicketController@autosearch');
         Route::get('auto', 'Agent\helpdesk\TicketController@autosearch2');
@@ -391,12 +391,12 @@ Route::group(['middleware' => ['web']], function () {
         Route::get('/get-under-process-tickets/{id}', ['as' => 'get.dept.inprocess', 'uses' => 'Agent\helpdesk\Ticket2Controller@getInProcessTickets']);
 
         // route for graphical reporting
-        Route::get('report', ['as' => 'report.index', 'uses' => 'Agent\helpdesk\ReportController@index']); /* To show dashboard pages */
+        Route::get('report', ['as' => 'report.index', 'uses' => 'Agent\helpdesk\ReportController@index']); /* To showTableau_De_Bord pages */
 
         // default route to get the data for the first time
         Route::get('help-topic-report', 'Agent\helpdesk\ReportController@chartdataHelptopic');
         // route to get the data on change
-        Route::post('help-topic-report/{date1}/{date2}/{id}', ['as' => 'report.helptopic', 'uses' => 'Agent\helpdesk\ReportController@chartdataHelptopic']); /* To show dashboard pages */
+        Route::post('help-topic-report/{date1}/{date2}/{id}', ['as' => 'report.helptopic', 'uses' => 'Agent\helpdesk\ReportController@chartdataHelptopic']); /* To showTableau_De_Bord pages */
         Route::post('help-topic-pdf', ['as' => 'help.topic.pdf', 'uses' => 'Agent\helpdesk\ReportController@helptopicPdf']);
         // Route to get details of agents
         Route::post('get-agents', ['as' => 'get-agents', 'uses' => 'Agent\helpdesk\UserController@getAgentDetails']);
@@ -799,7 +799,7 @@ Route::group(['middleware' => ['web']], function () {
     Route::post('restore/{id}', ['as' => 'user.restore', 'uses' => 'Agent\helpdesk\UserController@restoreUser']);
 
     // Breadcrumbs::register('open.ticket', function ($breadcrumbs) {
-    //     $breadcrumbs->parent('dashboard');
+    //     $breadcrumbs->parent(' Tableau_De_Bord');
     //     $breadcrumbs->push(Lang::get('lang.tickets') . '&nbsp; > &nbsp;' . Lang::get('lang.open'), route('open.ticket'));
     // });
     Route::get('swtich-language/{id}', ['as' => 'switch-user-lang', 'uses' => 'Client\helpdesk\UnAuthController@changeUserLanguage']);

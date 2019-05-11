@@ -46,5 +46,5 @@ Don’t replace these files/folder:
 .env file in the root directory.
 config/database.php file.
 config/lfm.php file.
-public/lb-faveo/media.
+public/lb-Faveo/media.
 public/photos.
